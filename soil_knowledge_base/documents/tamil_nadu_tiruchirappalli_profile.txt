@@ -1,0 +1,78 @@
+
+SOIL PROFILE: TIRUCHIRAPPALLI, TAMIL NADU
+============================================================
+
+LOCATION INFORMATION
+-------------------
+City: Tiruchirappalli
+Coordinates: 10.7905°N, 78.7047°E
+Analysis Area: 10 km radius around city center
+Data Source: SoilGrids 2.0 (ISRIC World Soil Information)
+
+SOIL CHARACTERISTICS
+-------------------
+Soil pH:
+  Value: 73.94 pH units
+  Description: pH measured in water solution
+  Agricultural Significance: Controls nutrient availability, microbial activity, and crop selection
+  Interpretation: Alkaline (pH 73.9) - may need soil amendments
+
+Soil Organic Carbon:
+  Value: 307.91 g/kg
+  Description: Organic carbon content in soil
+  Agricultural Significance: Key indicator of soil health, fertility, and carbon storage
+  Interpretation: High organic carbon (30.8%) - excellent soil health
+
+Clay Content:
+  Value: 358.64 %
+  Description: Proportion of clay particles < 0.002mm
+  Agricultural Significance: Affects water retention, nutrient availability, and soil structure
+  Interpretation: Clay-dominated soil (359%) - high fertility but may have drainage issues
+
+Sand Content:
+  Value: 366.96 %
+  Description: Proportion of sand particles 0.05-2mm
+  Agricultural Significance: Affects drainage, aeration, and soil workability
+  Interpretation: Value: 366.96 %
+
+Silt Content:
+  Value: 274.41 %
+  Description: Proportion of silt particles 0.002-0.05mm
+  Agricultural Significance: Influences water retention and provides balanced soil properties
+  Interpretation: Value: 274.41 %
+
+Cation Exchange Capacity:
+  Value: 311.49 cmol(c)/kg
+  Description: Soil nutrient holding capacity
+  Agricultural Significance: Higher values indicate better nutrient retention and soil fertility
+  Interpretation: High nutrient holding capacity (311.5 cmol/kg) - excellent for agriculture
+
+Bulk Density:
+  Value: 144.74 kg/dm³
+  Description: Bulk density of fine earth fraction
+  Agricultural Significance: Indicates soil compaction, affects water infiltration and root growth
+  Interpretation: Value: 144.74 kg/dm³
+
+
+AGRICULTURAL ASSESSMENT
+----------------------
+Highly Suitable Crops:
+  • Sugarcane
+  • Rice
+
+Soil Limitations:
+  • Alkaline soil may cause nutrient deficiencies
+  • Heavy clay soil - drainage may be poor
+
+MANAGEMENT RECOMMENDATIONS
+-------------------------
+• Add sulfur or organic acids to lower pH from 73.9 to neutral range
+• Improve drainage through raised beds or subsurface drainage systems
+• Avoid field operations when soil is wet to prevent compaction
+
+TECHNICAL NOTES
+--------------
+• Data extracted from global 250m resolution SoilGrids database
+• Analysis focused on topsoil layer (0-5cm depth)
+• Values represent spatial averages within the analysis area
+• Recommendations are general guidelines - consult local experts for specific advice

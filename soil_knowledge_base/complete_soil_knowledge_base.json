@@ -1,0 +1,3343 @@
+{
+  "metadata": {
+    "created_date": "2025-09-20T14:56:39.709941",
+    "data_source": "SoilGrids 2.0 (ISRIC World Soil Information)",
+    "resolution": "250m global grid",
+    "coordinate_system": "EPSG:4326 (WGS84)",
+    "coverage_area": "Tamil Nadu and Kerala, India",
+    "total_parameters": 10,
+    "depth_layers": 6,
+    "extraction_tool": "Python SoilGrids API"
+  },
+  "parameter_definitions": {
+    "bdod": {
+      "name": "Bulk Density",
+      "description": "Bulk density of fine earth fraction",
+      "unit": "kg/dm\u00b3",
+      "importance": "Indicates soil compaction, affects water infiltration and root growth"
+    },
+    "cec": {
+      "name": "Cation Exchange Capacity",
+      "description": "Soil nutrient holding capacity",
+      "unit": "cmol(c)/kg",
+      "importance": "Higher values indicate better nutrient retention and soil fertility"
+    },
+    "cfvo": {
+      "name": "Coarse Fragments",
+      "description": "Volumetric fraction of coarse fragments > 2mm",
+      "unit": "vol%",
+      "importance": "High values reduce water storage and may limit root development"
+    },
+    "clay": {
+      "name": "Clay Content",
+      "description": "Proportion of clay particles < 0.002mm",
+      "unit": "%",
+      "importance": "Affects water retention, nutrient availability, and soil structure"
+    },
+    "nitrogen": {
+      "name": "Total Nitrogen",
+      "description": "Total nitrogen content in soil",
+      "unit": "g/kg",
+      "importance": "Essential macronutrient for plant growth and protein synthesis"
+    },
+    "phh2o": {
+      "name": "Soil pH",
+      "description": "pH measured in water solution",
+      "unit": "pH units",
+      "importance": "Controls nutrient availability, microbial activity, and crop selection"
+    },
+    "sand": {
+      "name": "Sand Content",
+      "description": "Proportion of sand particles 0.05-2mm",
+      "unit": "%",
+      "importance": "Affects drainage, aeration, and soil workability"
+    },
+    "silt": {
+      "name": "Silt Content",
+      "description": "Proportion of silt particles 0.002-0.05mm",
+      "unit": "%",
+      "importance": "Influences water retention and provides balanced soil properties"
+    },
+    "soc": {
+      "name": "Soil Organic Carbon",
+      "description": "Organic carbon content in soil",
+      "unit": "g/kg",
+      "importance": "Key indicator of soil health, fertility, and carbon storage"
+    },
+    "ocd": {
+      "name": "Organic Carbon Density",
+      "description": "Organic carbon density in soil profile",
+      "unit": "kg/m\u00b2",
+      "importance": "Important for carbon sequestration and climate studies"
+    }
+  },
+  "regions": {
+    "tamil_nadu": {
+      "region_info": {
+        "name": "Tamil Nadu",
+        "bounds": {
+          "west": 76.2,
+          "south": 8.0,
+          "east": 80.3,
+          "north": 13.5
+        },
+        "major_cities": [
+          {
+            "name": "Chennai",
+            "lat": 13.0827,
+            "lon": 80.2707
+          },
+          {
+            "name": "Coimbatore",
+            "lat": 11.0168,
+            "lon": 76.9558
+          },
+          {
+            "name": "Madurai",
+            "lat": 9.9252,
+            "lon": 78.1198
+          },
+          {
+            "name": "Tiruchirappalli",
+            "lat": 10.7905,
+            "lon": 78.7047
+          },
+          {
+            "name": "Salem",
+            "lat": 11.664,
+            "lon": 78.146
+          },
+          {
+            "name": "Tirunelveli",
+            "lat": 8.7139,
+            "lon": 77.7567
+          },
+          {
+            "name": "Erode",
+            "lat": 11.341,
+            "lon": 77.7172
+          },
+          {
+            "name": "Vellore",
+            "lat": 12.9165,
+            "lon": 79.1325
+          }
+        ]
+      },
+      "soil_parameters": {
+        "bdod": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 133.30961806612922,
+              "median": 137.0,
+              "std": 11.569556311138758,
+              "min": 67.0,
+              "max": 165.0,
+              "q25": 129.0,
+              "q75": 141.0,
+              "count": 187179
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 133.31 kg/dm\u00b3"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 134.78021038684895,
+              "median": 138.0,
+              "std": 10.853208467014253,
+              "min": 68.0,
+              "max": 167.0,
+              "q25": 131.0,
+              "q75": 142.0,
+              "count": 187179
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 134.78 kg/dm\u00b3"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 137.69451701312647,
+              "median": 140.0,
+              "std": 10.900737014952869,
+              "min": 71.0,
+              "max": 169.0,
+              "q25": 134.0,
+              "q75": 145.0,
+              "count": 187179
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 137.69 kg/dm\u00b3"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 140.7526378493314,
+              "median": 144.0,
+              "std": 10.342077569627572,
+              "min": 73.0,
+              "max": 165.0,
+              "q25": 137.0,
+              "q75": 148.0,
+              "count": 187179
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 140.75 kg/dm\u00b3"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 141.74712975280346,
+              "median": 144.0,
+              "std": 10.105152156953514,
+              "min": 75.0,
+              "max": 165.0,
+              "q25": 138.0,
+              "q75": 149.0,
+              "count": 187179
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 141.75 kg/dm\u00b3"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 142.14825915300327,
+              "median": 145.0,
+              "std": 9.605043984767931,
+              "min": 77.0,
+              "max": 162.0,
+              "q25": 138.0,
+              "q75": 149.0,
+              "count": 187179
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 142.15 kg/dm\u00b3"
+          }
+        },
+        "cec": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 250.31492237715946,
+              "median": 260.0,
+              "std": 50.62800060608988,
+              "min": 66.0,
+              "max": 402.0,
+              "q25": 219.0,
+              "q75": 287.0,
+              "count": 187316
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (250.3 cmol/kg) - excellent for agriculture"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 249.01681650259454,
+              "median": 262.0,
+              "std": 57.19498066264714,
+              "min": 62.0,
+              "max": 429.0,
+              "q25": 212.0,
+              "q75": 291.0,
+              "count": 187316
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (249.0 cmol/kg) - excellent for agriculture"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 248.68362553118794,
+              "median": 263.0,
+              "std": 58.7776652720056,
+              "min": 66.0,
+              "max": 452.0,
+              "q25": 211.0,
+              "q75": 292.0,
+              "count": 187316
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (248.7 cmol/kg) - excellent for agriculture"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 251.38510324798736,
+              "median": 266.0,
+              "std": 60.14012108083183,
+              "min": 68.0,
+              "max": 456.0,
+              "q25": 213.0,
+              "q75": 296.0,
+              "count": 187316
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (251.4 cmol/kg) - excellent for agriculture"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 254.27247005060966,
+              "median": 270.0,
+              "std": 62.59672247061053,
+              "min": 68.0,
+              "max": 456.0,
+              "q25": 213.0,
+              "q75": 300.0,
+              "count": 187316
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (254.3 cmol/kg) - excellent for agriculture"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 250.85598133635142,
+              "median": 266.0,
+              "std": 59.73922755734936,
+              "min": 65.0,
+              "max": 450.0,
+              "q25": 213.0,
+              "q75": 294.0,
+              "count": 187316
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (250.9 cmol/kg) - excellent for agriculture"
+          }
+        },
+        "cfvo": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 109.65133907361836,
+              "median": 105.0,
+              "std": 36.27609730176857,
+              "min": 31.0,
+              "max": 264.0,
+              "q25": 80.0,
+              "q75": 135.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 109.65 vol%"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 111.53001371903208,
+              "median": 106.0,
+              "std": 35.878992632075,
+              "min": 35.0,
+              "max": 283.0,
+              "q25": 83.0,
+              "q75": 136.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 111.53 vol%"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 117.68372559800567,
+              "median": 112.0,
+              "std": 39.192380115433714,
+              "min": 34.0,
+              "max": 311.0,
+              "q25": 86.0,
+              "q75": 146.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 117.68 vol%"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 137.6005199353017,
+              "median": 134.0,
+              "std": 41.23536708465184,
+              "min": 36.0,
+              "max": 323.0,
+              "q25": 105.0,
+              "q75": 166.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 137.60 vol%"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 150.38586245736158,
+              "median": 148.0,
+              "std": 42.434594424203716,
+              "min": 47.0,
+              "max": 322.0,
+              "q25": 116.0,
+              "q75": 180.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 150.39 vol%"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 169.52463286909267,
+              "median": 168.0,
+              "std": 42.3181464366696,
+              "min": 53.0,
+              "max": 352.0,
+              "q25": 137.0,
+              "q75": 199.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 169.52 vol%"
+          }
+        },
+        "clay": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 312.65636226785745,
+              "median": 315.0,
+              "std": 33.4136151123808,
+              "min": 135.0,
+              "max": 428.0,
+              "q25": 295.0,
+              "q75": 334.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Clay Content",
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "importance": "Affects water retention, nutrient availability, and soil structure"
+            },
+            "interpretation": "Clay-dominated soil (313%) - high fertility but may have drainage issues"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 323.91659148779434,
+              "median": 326.0,
+              "std": 32.85626921894066,
+              "min": 146.0,
+              "max": 442.0,
+              "q25": 306.0,
+              "q75": 345.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Clay Content",
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "importance": "Affects water retention, nutrient availability, and soil structure"
+            },
+            "interpretation": "Clay-dominated soil (324%) - high fertility but may have drainage issues"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 357.69747132081716,
+              "median": 357.0,
+              "std": 29.926946246175646,
+              "min": 182.0,
+              "max": 485.0,
+              "q25": 338.0,
+              "q75": 378.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Clay Content",
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "importance": "Affects water retention, nutrient availability, and soil structure"
+            },
+            "interpretation": "Clay-dominated soil (358%) - high fertility but may have drainage issues"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 389.59030272619054,
+              "median": 390.0,
+              "std": 34.352293950051916,
+              "min": 221.0,
+              "max": 535.0,
+              "q25": 366.0,
+              "q75": 413.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Clay Content",
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "importance": "Affects water retention, nutrient availability, and soil structure"
+            },
+            "interpretation": "Clay-dominated soil (390%) - high fertility but may have drainage issues"
+          }
+        },
+        "nitrogen": {},
+        "phh2o": {},
+        "sand": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 403.27081476103797,
+              "median": 392.0,
+              "std": 58.257959378702445,
+              "min": 253.0,
+              "max": 767.0,
+              "q25": 368.0,
+              "q75": 424.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 403.27 %"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 395.15207840667057,
+              "median": 384.0,
+              "std": 56.78909330154709,
+              "min": 246.0,
+              "max": 758.0,
+              "q25": 360.0,
+              "q75": 417.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 395.15 %"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 372.1589165701352,
+              "median": 365.0,
+              "std": 46.91957314303304,
+              "min": 242.0,
+              "max": 724.0,
+              "q25": 342.0,
+              "q75": 395.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 372.16 %"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 349.1299411202631,
+              "median": 344.0,
+              "std": 41.88574932052498,
+              "min": 227.0,
+              "max": 655.0,
+              "q25": 321.0,
+              "q75": 373.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 349.13 %"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 343.0086958378485,
+              "median": 338.0,
+              "std": 42.002850398521645,
+              "min": 223.0,
+              "max": 654.0,
+              "q25": 313.0,
+              "q75": 368.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 343.01 %"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 351.6539120594029,
+              "median": 347.0,
+              "std": 40.52661069628482,
+              "min": 233.0,
+              "max": 651.0,
+              "q25": 322.0,
+              "q75": 376.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 351.65 %"
+          }
+        },
+        "silt": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 284.44388275298803,
+              "median": 288.0,
+              "std": 39.289328008938156,
+              "min": 98.0,
+              "max": 430.0,
+              "q25": 264.0,
+              "q75": 310.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 284.44 %"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 281.30553405469465,
+              "median": 285.0,
+              "std": 39.382687010611434,
+              "min": 96.0,
+              "max": 428.0,
+              "q25": 261.0,
+              "q75": 306.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 281.31 %"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 270.51863279435867,
+              "median": 274.0,
+              "std": 40.09835954538405,
+              "min": 94.0,
+              "max": 417.0,
+              "q25": 251.0,
+              "q75": 295.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 270.52 %"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 261.6518195066487,
+              "median": 264.0,
+              "std": 39.1774520472776,
+              "min": 85.0,
+              "max": 416.0,
+              "q25": 242.0,
+              "q75": 285.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 261.65 %"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 263.3135039048529,
+              "median": 264.0,
+              "std": 37.82397007454638,
+              "min": 81.0,
+              "max": 415.0,
+              "q25": 243.0,
+              "q75": 285.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 263.31 %"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 267.72966033384756,
+              "median": 269.0,
+              "std": 34.2764055332355,
+              "min": 84.0,
+              "max": 398.0,
+              "q25": 249.0,
+              "q75": 289.0,
+              "count": 187331
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 267.73 %"
+          }
+        },
+        "soc": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 345.5713040844629,
+              "median": 320.0,
+              "std": 126.9826860009188,
+              "min": 148.0,
+              "max": 1280.0,
+              "q25": 255.0,
+              "q75": 404.0,
+              "count": 188201
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (34.6%) - excellent soil health"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 216.35085892210986,
+              "median": 185.0,
+              "std": 103.19109388911878,
+              "min": 61.0,
+              "max": 1124.0,
+              "q25": 142.0,
+              "q75": 269.0,
+              "count": 188201
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (21.6%) - excellent soil health"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 162.76721696484077,
+              "median": 141.0,
+              "std": 85.50959401661983,
+              "min": 59.0,
+              "max": 1050.0,
+              "q25": 100.0,
+              "q75": 197.0,
+              "count": 188201
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (16.3%) - excellent soil health"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 119.76998528169351,
+              "median": 97.0,
+              "std": 73.90864997371327,
+              "min": 42.0,
+              "max": 987.0,
+              "q25": 75.0,
+              "q75": 136.0,
+              "count": 188201
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (12.0%) - excellent soil health"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 89.02270976243484,
+              "median": 67.0,
+              "std": 67.74050608401242,
+              "min": 23.0,
+              "max": 872.0,
+              "q25": 50.0,
+              "q75": 100.0,
+              "count": 188201
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (8.9%) - excellent soil health"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 77.53776547414732,
+              "median": 54.0,
+              "std": 69.192492598872,
+              "min": 14.0,
+              "max": 912.0,
+              "q25": 38.0,
+              "q75": 87.0,
+              "count": 188201
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (7.8%) - excellent soil health"
+          }
+        },
+        "ocd": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 308.8236016422062,
+              "median": 293.0,
+              "std": 60.30946078372003,
+              "min": 183.0,
+              "max": 648.0,
+              "q25": 268.0,
+              "q75": 336.0,
+              "count": 187309
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 308.82 kg/m\u00b2"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 253.0925582860407,
+              "median": 237.0,
+              "std": 50.628140853003885,
+              "min": 147.0,
+              "max": 559.0,
+              "q25": 218.0,
+              "q75": 281.0,
+              "count": 187309
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 253.09 kg/m\u00b2"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 187.13797521742148,
+              "median": 174.0,
+              "std": 42.84821847126764,
+              "min": 118.0,
+              "max": 478.0,
+              "q25": 159.0,
+              "q75": 204.0,
+              "count": 187309
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 187.14 kg/m\u00b2"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 120.66812059217656,
+              "median": 113.0,
+              "std": 29.53443559234288,
+              "min": 76.0,
+              "max": 351.0,
+              "q25": 101.0,
+              "q75": 132.0,
+              "count": 187309
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 120.67 kg/m\u00b2"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 87.23601642206194,
+              "median": 80.0,
+              "std": 26.89032503047297,
+              "min": 49.0,
+              "max": 287.0,
+              "q25": 69.0,
+              "q75": 96.0,
+              "count": 187309
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 87.24 kg/m\u00b2"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 63.990085900837656,
+              "median": 58.0,
+              "std": 24.410296662722946,
+              "min": 27.0,
+              "max": 261.0,
+              "q25": 49.0,
+              "q75": 72.0,
+              "count": 187309
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 63.99 kg/m\u00b2"
+          }
+        }
+      },
+      "city_profiles": {
+        "Chennai": {
+          "city_info": {
+            "name": "Chennai",
+            "lat": 13.0827,
+            "lon": 80.2707
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 66.714463840399,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 66.7) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 392.926433915212,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (39.3%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 315.54738154613466,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (316%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 366.3528678304239,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 366.35 %"
+            },
+            "silt": {
+              "mean": 318.1209476309227,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 318.12 %"
+            },
+            "cec": {
+              "mean": 255.7942643391521,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (255.8 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 133.8154613466334,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 133.82 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 66.7 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Coimbatore": {
+          "city_info": {
+            "name": "Coimbatore",
+            "lat": 11.0168,
+            "lon": 76.9558
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 70.33099450884686,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 70.3) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 271.29225137278826,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (27.1%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 260.37080536912754,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (260%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 499.975442342892,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 499.98 %"
+            },
+            "silt": {
+              "mean": 239.65024405125075,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 239.65 %"
+            },
+            "cec": {
+              "mean": 236.50244051250763,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (236.5 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 139.85051860890786,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 139.85 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 70.3 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Madurai": {
+          "city_info": {
+            "name": "Madurai",
+            "lat": 9.9252,
+            "lon": 78.1198
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 72.10797127045802,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 72.1) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 297.87236547745204,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (29.8%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 325.74838101966327,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (326%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 412.1803838455198,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 412.18 %"
+            },
+            "silt": {
+              "mean": 262.07724008006596,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 262.08 %"
+            },
+            "cec": {
+              "mean": 294.22253620628754,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (294.2 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 150.0024726245143,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 150.00 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 72.1 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Tiruchirappalli": {
+          "city_info": {
+            "name": "Tiruchirappalli",
+            "lat": 10.7905,
+            "lon": 78.7047
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 73.9401888772298,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 73.9) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 307.9115075201119,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (30.8%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 358.63891803660954,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (359%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 366.96117523609655,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 366.96 %"
+            },
+            "silt": {
+              "mean": 274.4141308149703,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 274.41 %"
+            },
+            "cec": {
+              "mean": 311.49411216042904,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (311.5 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 144.73697096887022,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 144.74 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 73.9 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Salem": {
+          "city_info": {
+            "name": "Salem",
+            "lat": 11.664,
+            "lon": 78.146
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 67.46637093873636,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 67.5) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 300.3225032969668,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (30.0%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 341.91931423090756,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (342%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 369.0368061383527,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 369.04 %"
+            },
+            "silt": {
+              "mean": 289.05203213044,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 289.05 %"
+            },
+            "cec": {
+              "mean": 302.16424889102024,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (302.2 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 136.69428126123967,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 136.69 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 67.5 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Tirunelveli": {
+          "city_info": {
+            "name": "Tirunelveli",
+            "lat": 8.7139,
+            "lon": 77.7567
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 69.9264946096047,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 69.9) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 385.5322879233366,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (38.6%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 330.2850920178591,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (330%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 397.99618860938693,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 398.00 %"
+            },
+            "silt": {
+              "mean": 271.71479908526624,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 271.71 %"
+            },
+            "cec": {
+              "mean": 249.8376347598824,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (249.8 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 145.32400238237045,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 145.32 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 69.9 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Erode": {
+          "city_info": {
+            "name": "Erode",
+            "lat": 11.341,
+            "lon": 77.7172
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 69.10622154779969,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 69.1) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 248.36302089412862,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (24.8%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 296.53239173573013,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (297%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 374.32566826193533,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 374.33 %"
+            },
+            "silt": {
+              "mean": 329.13983891677367,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 329.14 %"
+            },
+            "cec": {
+              "mean": 309.95926228551417,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (310.0 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 140.7073654721606,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 140.71 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 69.1 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Vellore": {
+          "city_info": {
+            "name": "Vellore",
+            "lat": 12.9165,
+            "lon": 79.1325
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 70.03441003441003,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 70.0) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 285.8214008214008,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (28.6%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 311.1306471306471,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (311%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 376.966033966034,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 376.97 %"
+            },
+            "silt": {
+              "mean": 311.9092019092019,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 311.91 %"
+            },
+            "cec": {
+              "mean": 300.29093129093127,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (300.3 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 140.06671106671106,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 140.07 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 70.0 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        }
+      },
+      "regional_statistics": {},
+      "agricultural_analysis": {
+        "dominant_soil_types": {
+          "texture": "Clay soils dominant"
+        },
+        "agricultural_potential": {},
+        "major_constraints": [],
+        "recommended_crops": {},
+        "management_priorities": []
+      }
+    },
+    "kerala": {
+      "region_info": {
+        "name": "Kerala",
+        "bounds": {
+          "west": 74.8,
+          "south": 8.2,
+          "east": 77.4,
+          "north": 12.8
+        },
+        "major_cities": [
+          {
+            "name": "Thiruvananthapuram",
+            "lat": 8.5241,
+            "lon": 76.9366
+          },
+          {
+            "name": "Kochi",
+            "lat": 9.9312,
+            "lon": 76.2673
+          },
+          {
+            "name": "Kozhikode",
+            "lat": 11.2588,
+            "lon": 75.7804
+          },
+          {
+            "name": "Kollam",
+            "lat": 8.8932,
+            "lon": 76.6141
+          },
+          {
+            "name": "Thrissur",
+            "lat": 10.5276,
+            "lon": 76.2144
+          },
+          {
+            "name": "Alappuzha",
+            "lat": 9.4981,
+            "lon": 76.3388
+          },
+          {
+            "name": "Kottayam",
+            "lat": 9.5916,
+            "lon": 76.5222
+          },
+          {
+            "name": "Kannur",
+            "lat": 11.8745,
+            "lon": 75.3704
+          }
+        ]
+      },
+      "soil_parameters": {
+        "bdod": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 121.79085397089969,
+              "median": 121.0,
+              "std": 12.394562934653392,
+              "min": 80.0,
+              "max": 151.0,
+              "q25": 113.0,
+              "q75": 134.0,
+              "count": 130789
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 121.79 kg/dm\u00b3"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 123.63803530877979,
+              "median": 123.0,
+              "std": 11.54773237231887,
+              "min": 81.0,
+              "max": 151.0,
+              "q25": 115.0,
+              "q75": 134.0,
+              "count": 130789
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 123.64 kg/dm\u00b3"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 126.27578007324774,
+              "median": 125.0,
+              "std": 11.066265849693337,
+              "min": 84.0,
+              "max": 152.0,
+              "q25": 118.0,
+              "q75": 136.0,
+              "count": 130789
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 126.28 kg/dm\u00b3"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 129.89759842188565,
+              "median": 129.0,
+              "std": 10.713390146816206,
+              "min": 92.0,
+              "max": 154.0,
+              "q25": 123.0,
+              "q75": 139.0,
+              "count": 130789
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 129.90 kg/dm\u00b3"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 130.98701725680294,
+              "median": 130.0,
+              "std": 10.067408445419463,
+              "min": 98.0,
+              "max": 154.0,
+              "q25": 124.0,
+              "q75": 139.0,
+              "count": 130789
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 130.99 kg/dm\u00b3"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 131.65377822293925,
+              "median": 130.0,
+              "std": 9.533777954028107,
+              "min": 98.0,
+              "max": 154.0,
+              "q25": 125.0,
+              "q75": 139.0,
+              "count": 130789
+            },
+            "parameter_info": {
+              "name": "Bulk Density",
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "importance": "Indicates soil compaction, affects water infiltration and root growth"
+            },
+            "interpretation": "Value: 131.65 kg/dm\u00b3"
+          }
+        },
+        "cec": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 214.9430167427004,
+              "median": 209.0,
+              "std": 48.161672066513724,
+              "min": 81.0,
+              "max": 380.0,
+              "q25": 174.0,
+              "q75": 255.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (214.9 cmol/kg) - excellent for agriculture"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 206.55691830387505,
+              "median": 198.0,
+              "std": 54.775135818677995,
+              "min": 63.0,
+              "max": 387.0,
+              "q25": 160.0,
+              "q75": 253.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (206.6 cmol/kg) - excellent for agriculture"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 204.11862023643047,
+              "median": 194.0,
+              "std": 57.94150066800552,
+              "min": 62.0,
+              "max": 383.0,
+              "q25": 154.0,
+              "q75": 254.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (204.1 cmol/kg) - excellent for agriculture"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 203.7921796076813,
+              "median": 193.0,
+              "std": 59.624990420453535,
+              "min": 61.0,
+              "max": 392.0,
+              "q25": 152.0,
+              "q75": 255.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (203.8 cmol/kg) - excellent for agriculture"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 203.150370998678,
+              "median": 192.0,
+              "std": 59.96528374973832,
+              "min": 62.0,
+              "max": 385.0,
+              "q25": 151.0,
+              "q75": 256.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (203.2 cmol/kg) - excellent for agriculture"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 201.3625318080741,
+              "median": 192.0,
+              "std": 57.065380707783596,
+              "min": 60.0,
+              "max": 373.0,
+              "q25": 151.0,
+              "q75": 253.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Cation Exchange Capacity",
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "importance": "Higher values indicate better nutrient retention and soil fertility"
+            },
+            "interpretation": "High nutrient holding capacity (201.4 cmol/kg) - excellent for agriculture"
+          }
+        },
+        "cfvo": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 129.327663281447,
+              "median": 126.0,
+              "std": 39.314056461598476,
+              "min": 34.0,
+              "max": 349.0,
+              "q25": 100.0,
+              "q75": 155.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 129.33 vol%"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 133.5557109343359,
+              "median": 130.0,
+              "std": 41.98259684473556,
+              "min": 36.0,
+              "max": 354.0,
+              "q25": 101.0,
+              "q75": 161.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 133.56 vol%"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 144.07756203052045,
+              "median": 141.0,
+              "std": 43.727695732494006,
+              "min": 37.0,
+              "max": 365.0,
+              "q25": 111.0,
+              "q75": 173.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 144.08 vol%"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 164.95351627274326,
+              "median": 161.0,
+              "std": 46.42340399025017,
+              "min": 37.0,
+              "max": 368.0,
+              "q25": 131.0,
+              "q75": 197.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 164.95 vol%"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 176.0798086548528,
+              "median": 174.0,
+              "std": 44.27359242235517,
+              "min": 45.0,
+              "max": 357.0,
+              "q25": 145.0,
+              "q75": 207.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 176.08 vol%"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 188.84110099875443,
+              "median": 188.0,
+              "std": 42.97494243382305,
+              "min": 48.0,
+              "max": 372.0,
+              "q25": 160.0,
+              "q75": 219.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Coarse Fragments",
+              "description": "Volumetric fraction of coarse fragments > 2mm",
+              "unit": "vol%",
+              "importance": "High values reduce water storage and may limit root development"
+            },
+            "interpretation": "Value: 188.84 vol%"
+          }
+        },
+        "clay": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 310.70249039071393,
+              "median": 311.0,
+              "std": 29.041495058302832,
+              "min": 174.0,
+              "max": 430.0,
+              "q25": 291.0,
+              "q75": 331.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Clay Content",
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "importance": "Affects water retention, nutrient availability, and soil structure"
+            },
+            "interpretation": "Clay-dominated soil (311%) - high fertility but may have drainage issues"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 318.30235437060134,
+              "median": 318.0,
+              "std": 28.011297944197022,
+              "min": 177.0,
+              "max": 431.0,
+              "q25": 299.0,
+              "q75": 337.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Clay Content",
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "importance": "Affects water retention, nutrient availability, and soil structure"
+            },
+            "interpretation": "Clay-dominated soil (318%) - high fertility but may have drainage issues"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 349.8209272292397,
+              "median": 349.0,
+              "std": 27.12610524204357,
+              "min": 184.0,
+              "max": 472.0,
+              "q25": 331.0,
+              "q75": 368.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Clay Content",
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "importance": "Affects water retention, nutrient availability, and soil structure"
+            },
+            "interpretation": "Clay-dominated soil (350%) - high fertility but may have drainage issues"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 374.9516822936965,
+              "median": 375.0,
+              "std": 30.173060142385523,
+              "min": 205.0,
+              "max": 493.0,
+              "q25": 354.0,
+              "q75": 396.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Clay Content",
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "importance": "Affects water retention, nutrient availability, and soil structure"
+            },
+            "interpretation": "Clay-dominated soil (375%) - high fertility but may have drainage issues"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 379.4649442546786,
+              "median": 380.0,
+              "std": 29.850349886830767,
+              "min": 206.0,
+              "max": 501.0,
+              "q25": 359.0,
+              "q75": 400.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Clay Content",
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "importance": "Affects water retention, nutrient availability, and soil structure"
+            },
+            "interpretation": "Clay-dominated soil (379%) - high fertility but may have drainage issues"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 369.95395184276686,
+              "median": 370.0,
+              "std": 29.490802607233984,
+              "min": 196.0,
+              "max": 494.0,
+              "q25": 349.0,
+              "q75": 390.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Clay Content",
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "importance": "Affects water retention, nutrient availability, and soil structure"
+            },
+            "interpretation": "Clay-dominated soil (370%) - high fertility but may have drainage issues"
+          }
+        },
+        "nitrogen": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 323.89097758724773,
+              "median": 317.0,
+              "std": 118.83792264525762,
+              "min": 111.0,
+              "max": 896.0,
+              "q25": 213.0,
+              "q75": 408.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Total Nitrogen",
+              "description": "Total nitrogen content in soil",
+              "unit": "g/kg",
+              "importance": "Essential macronutrient for plant growth and protein synthesis"
+            },
+            "interpretation": "Value: 323.89 g/kg"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 255.1148682209639,
+              "median": 238.0,
+              "std": 119.54977588333819,
+              "min": 87.0,
+              "max": 1203.0,
+              "q25": 155.0,
+              "q75": 312.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Total Nitrogen",
+              "description": "Total nitrogen content in soil",
+              "unit": "g/kg",
+              "importance": "Essential macronutrient for plant growth and protein synthesis"
+            },
+            "interpretation": "Value: 255.11 g/kg"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 191.6362761055455,
+              "median": 169.0,
+              "std": 95.25781338627468,
+              "min": 61.0,
+              "max": 813.0,
+              "q25": 115.0,
+              "q75": 245.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Total Nitrogen",
+              "description": "Total nitrogen content in soil",
+              "unit": "g/kg",
+              "importance": "Essential macronutrient for plant growth and protein synthesis"
+            },
+            "interpretation": "Value: 191.64 g/kg"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 151.29157210212207,
+              "median": 134.0,
+              "std": 74.9254818193054,
+              "min": 42.0,
+              "max": 554.0,
+              "q25": 93.0,
+              "q75": 194.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Total Nitrogen",
+              "description": "Total nitrogen content in soil",
+              "unit": "g/kg",
+              "importance": "Essential macronutrient for plant growth and protein synthesis"
+            },
+            "interpretation": "Value: 151.29 g/kg"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 131.03137632485883,
+              "median": 113.0,
+              "std": 71.47362535001544,
+              "min": 31.0,
+              "max": 534.0,
+              "q25": 76.0,
+              "q75": 173.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Total Nitrogen",
+              "description": "Total nitrogen content in soil",
+              "unit": "g/kg",
+              "importance": "Essential macronutrient for plant growth and protein synthesis"
+            },
+            "interpretation": "Value: 131.03 g/kg"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 120.38632004462683,
+              "median": 103.0,
+              "std": 70.24290415795544,
+              "min": 26.0,
+              "max": 532.0,
+              "q25": 64.0,
+              "q75": 163.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Total Nitrogen",
+              "description": "Total nitrogen content in soil",
+              "unit": "g/kg",
+              "importance": "Essential macronutrient for plant growth and protein synthesis"
+            },
+            "interpretation": "Value: 120.39 g/kg"
+          }
+        },
+        "phh2o": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 59.138664099096005,
+              "median": 56.0,
+              "std": 6.419276299298372,
+              "min": 50.0,
+              "max": 81.0,
+              "q25": 54.0,
+              "q75": 65.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil pH",
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "importance": "Controls nutrient availability, microbial activity, and crop selection"
+            },
+            "interpretation": "Alkaline (pH 59.1) - may need soil amendments"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 59.10627908576144,
+              "median": 56.0,
+              "std": 6.536272779766633,
+              "min": 50.0,
+              "max": 81.0,
+              "q25": 54.0,
+              "q75": 66.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil pH",
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "importance": "Controls nutrient availability, microbial activity, and crop selection"
+            },
+            "interpretation": "Alkaline (pH 59.1) - may need soil amendments"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 59.24543224593659,
+              "median": 56.0,
+              "std": 6.6348698062212526,
+              "min": 50.0,
+              "max": 82.0,
+              "q25": 54.0,
+              "q75": 66.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil pH",
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "importance": "Controls nutrient availability, microbial activity, and crop selection"
+            },
+            "interpretation": "Alkaline (pH 59.2) - may need soil amendments"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 59.77091309231792,
+              "median": 56.0,
+              "std": 6.9141510797157295,
+              "min": 47.0,
+              "max": 84.0,
+              "q25": 54.0,
+              "q75": 66.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil pH",
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "importance": "Controls nutrient availability, microbial activity, and crop selection"
+            },
+            "interpretation": "Alkaline (pH 59.8) - may need soil amendments"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 60.220948625661954,
+              "median": 57.0,
+              "std": 6.933927189830539,
+              "min": 47.0,
+              "max": 81.0,
+              "q25": 55.0,
+              "q75": 67.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil pH",
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "importance": "Controls nutrient availability, microbial activity, and crop selection"
+            },
+            "interpretation": "Alkaline (pH 60.2) - may need soil amendments"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 60.494463675752506,
+              "median": 57.0,
+              "std": 6.770683388088884,
+              "min": 48.0,
+              "max": 80.0,
+              "q25": 55.0,
+              "q75": 67.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil pH",
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "importance": "Controls nutrient availability, microbial activity, and crop selection"
+            },
+            "interpretation": "Alkaline (pH 60.5) - may need soil amendments"
+          }
+        },
+        "sand": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 410.78912297593666,
+              "median": 410.0,
+              "std": 47.43798557641382,
+              "min": 246.0,
+              "max": 703.0,
+              "q25": 377.0,
+              "q75": 441.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 410.79 %"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 405.9851218449829,
+              "median": 404.0,
+              "std": 47.86099261565213,
+              "min": 241.0,
+              "max": 700.0,
+              "q25": 373.0,
+              "q75": 436.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 405.99 %"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 383.62950566623107,
+              "median": 383.0,
+              "std": 42.56256789501965,
+              "min": 236.0,
+              "max": 661.0,
+              "q25": 355.0,
+              "q75": 410.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 383.63 %"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 366.82534406211073,
+              "median": 364.0,
+              "std": 41.05518827718662,
+              "min": 212.0,
+              "max": 626.0,
+              "q25": 340.0,
+              "q75": 390.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 366.83 %"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 359.0880309942459,
+              "median": 358.0,
+              "std": 38.598831810814175,
+              "min": 210.0,
+              "max": 622.0,
+              "q25": 334.0,
+              "q75": 382.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 359.09 %"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 365.1772769996103,
+              "median": 364.0,
+              "std": 38.30542356920628,
+              "min": 216.0,
+              "max": 623.0,
+              "q25": 341.0,
+              "q75": 388.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Sand Content",
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "importance": "Affects drainage, aeration, and soil workability"
+            },
+            "interpretation": "Value: 365.18 %"
+          }
+        },
+        "silt": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 278.50669784431045,
+              "median": 281.0,
+              "std": 38.375307032946544,
+              "min": 122.0,
+              "max": 426.0,
+              "q25": 255.0,
+              "q75": 304.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 278.51 %"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 275.7126384081062,
+              "median": 279.0,
+              "std": 40.21583360331593,
+              "min": 116.0,
+              "max": 412.0,
+              "q25": 253.0,
+              "q75": 302.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 275.71 %"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 266.54994918349723,
+              "median": 269.0,
+              "std": 38.99677808468589,
+              "min": 106.0,
+              "max": 406.0,
+              "q25": 244.0,
+              "q75": 292.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 266.55 %"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 258.22238524258194,
+              "median": 260.0,
+              "std": 38.63505859807186,
+              "min": 101.0,
+              "max": 402.0,
+              "q25": 235.0,
+              "q75": 284.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 258.22 %"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 261.44584794785385,
+              "median": 262.0,
+              "std": 38.253339780161184,
+              "min": 114.0,
+              "max": 405.0,
+              "q25": 238.0,
+              "q75": 287.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 261.45 %"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 264.8695811650352,
+              "median": 266.0,
+              "std": 35.17337896070306,
+              "min": 131.0,
+              "max": 385.0,
+              "q25": 243.0,
+              "q75": 289.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Silt Content",
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "importance": "Influences water retention and provides balanced soil properties"
+            },
+            "interpretation": "Value: 264.87 %"
+          }
+        },
+        "soc": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 375.60674140131283,
+              "median": 361.0,
+              "std": 141.4158238649175,
+              "min": 142.0,
+              "max": 1263.0,
+              "q25": 260.0,
+              "q75": 453.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (37.6%) - excellent soil health"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 278.5778409481672,
+              "median": 274.0,
+              "std": 120.7449401364621,
+              "min": 75.0,
+              "max": 1102.0,
+              "q25": 173.0,
+              "q75": 348.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (27.9%) - excellent soil health"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 187.8356525526696,
+              "median": 172.0,
+              "std": 89.76065528136974,
+              "min": 64.0,
+              "max": 1199.0,
+              "q25": 121.0,
+              "q75": 231.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (18.8%) - excellent soil health"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 136.2070638759619,
+              "median": 117.0,
+              "std": 71.5317100349788,
+              "min": 42.0,
+              "max": 1057.0,
+              "q25": 93.0,
+              "q75": 156.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (13.6%) - excellent soil health"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 102.80113553869313,
+              "median": 87.0,
+              "std": 62.7612651314659,
+              "min": 28.0,
+              "max": 1055.0,
+              "q25": 65.0,
+              "q75": 117.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (10.3%) - excellent soil health"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 89.0481877994544,
+              "median": 73.0,
+              "std": 63.25087794131683,
+              "min": 22.0,
+              "max": 1032.0,
+              "q25": 51.0,
+              "q75": 104.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Soil Organic Carbon",
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "importance": "Key indicator of soil health, fertility, and carbon storage"
+            },
+            "interpretation": "High organic carbon (8.9%) - excellent soil health"
+          }
+        },
+        "ocd": {
+          "0-5cm": {
+            "statistics": {
+              "mean": 353.2189618150279,
+              "median": 348.0,
+              "std": 71.12150073582121,
+              "min": 203.0,
+              "max": 670.0,
+              "q25": 296.0,
+              "q75": 397.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 353.22 kg/m\u00b2"
+          },
+          "5-15cm": {
+            "statistics": {
+              "mean": 302.0069614787984,
+              "median": 301.0,
+              "std": 63.22614375905792,
+              "min": 141.0,
+              "max": 575.0,
+              "q25": 252.0,
+              "q75": 338.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 302.01 kg/m\u00b2"
+          },
+          "15-30cm": {
+            "statistics": {
+              "mean": 224.86042655295998,
+              "median": 218.0,
+              "std": 56.4240213656686,
+              "min": 124.0,
+              "max": 489.0,
+              "q25": 178.0,
+              "q75": 257.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 224.86 kg/m\u00b2"
+          },
+          "30-60cm": {
+            "statistics": {
+              "mean": 136.595714602294,
+              "median": 126.0,
+              "std": 40.14267544993181,
+              "min": 74.0,
+              "max": 381.0,
+              "q25": 107.0,
+              "q75": 156.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 136.60 kg/m\u00b2"
+          },
+          "60-100cm": {
+            "statistics": {
+              "mean": 97.12091271023895,
+              "median": 90.0,
+              "std": 32.728914044856,
+              "min": 48.0,
+              "max": 305.0,
+              "q25": 71.0,
+              "q75": 114.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 97.12 kg/m\u00b2"
+          },
+          "100-200cm": {
+            "statistics": {
+              "mean": 60.902088443639535,
+              "median": 55.0,
+              "std": 22.652200776189535,
+              "min": 28.0,
+              "max": 292.0,
+              "q25": 45.0,
+              "q75": 70.0,
+              "count": 130863
+            },
+            "parameter_info": {
+              "name": "Organic Carbon Density",
+              "description": "Organic carbon density in soil profile",
+              "unit": "kg/m\u00b2",
+              "importance": "Important for carbon sequestration and climate studies"
+            },
+            "interpretation": "Value: 60.90 kg/m\u00b2"
+          }
+        }
+      },
+      "city_profiles": {
+        "Thiruvananthapuram": {
+          "city_info": {
+            "name": "Thiruvananthapuram",
+            "lat": 8.5241,
+            "lon": 76.9366
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 54.695361635220124,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 54.7) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 414.84630503144655,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (41.5%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 348.6334512578616,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (349%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 362.66234276729557,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 362.66 %"
+            },
+            "silt": {
+              "mean": 288.71776729559747,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 288.72 %"
+            },
+            "cec": {
+              "mean": 212.46069182389937,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (212.5 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 132.62106918238993,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 132.62 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 54.7 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Kochi": {
+          "city_info": {
+            "name": "Kochi",
+            "lat": 9.9312,
+            "lon": 76.2673
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 54.18363273453094,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 54.2) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 543.9520958083832,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (54.4%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 327.72255489021956,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (328%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 340.8942115768463,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 340.89 %"
+            },
+            "silt": {
+              "mean": 331.34331337325347,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 331.34 %"
+            },
+            "cec": {
+              "mean": 214.42714570858283,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (214.4 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 114.46506986027944,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 114.47 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 54.2 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Kozhikode": {
+          "city_info": {
+            "name": "Kozhikode",
+            "lat": 11.2588,
+            "lon": 75.7804
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 56.11613566289825,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 56.1) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 425.49503254539223,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (42.5%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 312.20726276121957,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (312%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 482.07673860911274,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 482.08 %"
+            },
+            "silt": {
+              "mean": 205.72593353888317,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 205.73 %"
+            },
+            "cec": {
+              "mean": 183.19630010277493,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (183.2 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 124.19287427201097,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 124.19 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 56.1 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Kollam": {
+          "city_info": {
+            "name": "Kollam",
+            "lat": 8.8932,
+            "lon": 76.6141
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 53.72329411764706,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 53.7) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 391.2931764705882,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (39.1%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 322.71129411764707,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (323%) - high fertility but may have drainage issues"
+            },
+            "sand": {
+              "mean": 353.0070588235294,
+              "description": "Proportion of sand particles 0.05-2mm",
+              "unit": "%",
+              "interpretation": "Value: 353.01 %"
+            },
+            "silt": {
+              "mean": 324.276,
+              "description": "Proportion of silt particles 0.002-0.05mm",
+              "unit": "%",
+              "interpretation": "Value: 324.28 %"
+            },
+            "cec": {
+              "mean": 190.54188235294117,
+              "description": "Soil nutrient holding capacity",
+              "unit": "cmol(c)/kg",
+              "interpretation": "High nutrient holding capacity (190.5 cmol/kg) - excellent for agriculture"
+            },
+            "bdod": {
+              "mean": 120.1195294117647,
+              "description": "Bulk density of fine earth fraction",
+              "unit": "kg/dm\u00b3",
+              "interpretation": "Value: 120.12 kg/dm\u00b3"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [
+              "Sugarcane",
+              "Rice"
+            ],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies",
+              "Heavy clay soil - drainage may be poor"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 53.7 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Thrissur": {
+          "city_info": {
+            "name": "Thrissur",
+            "lat": 10.5276,
+            "lon": 76.2144
+          },
+          "buffer_km": 10,
+          "soil_data": {
+            "phh2o": {
+              "mean": 54.40006729475101,
+              "description": "pH measured in water solution",
+              "unit": "pH units",
+              "interpretation": "Alkaline (pH 54.4) - may need soil amendments"
+            },
+            "soc": {
+              "mean": 412.4064602960969,
+              "description": "Organic carbon content in soil",
+              "unit": "g/kg",
+              "interpretation": "High organic carbon (41.2%) - excellent soil health"
+            },
+            "clay": {
+              "mean": 306.08355764917,
+              "description": "Proportion of clay particles < 0.002mm",
+              "unit": "%",
+              "interpretation": "Clay-dominated soil (306%) - high fertility but may have drainage issues"
+            }
+          },
+          "agricultural_suitability": {
+            "highly_suitable": [],
+            "moderately_suitable": [],
+            "marginally_suitable": [
+              "Wheat",
+              "Barley"
+            ],
+            "limitations": [
+              "Alkaline soil may cause nutrient deficiencies"
+            ]
+          },
+          "management_recommendations": [
+            "Add sulfur or organic acids to lower pH from 54.4 to neutral range",
+            "Improve drainage through raised beds or subsurface drainage systems",
+            "Avoid field operations when soil is wet to prevent compaction"
+          ]
+        },
+        "Alappuzha": {
+          "city_info": {
+            "name": "Alappuzha",
+            "lat": 9.4981,
+            "lon": 76.3388
+          },
+          "buffer_km": 10,
+          "soil_data": {},
+          "agricultural_suitability": {
+            "highly_suitable": [],
+            "moderately_suitable": [],
+            "marginally_suitable": [],
+            "limitations": []
+          },
+          "management_recommendations": []
+        },
+        "Kottayam": {
+          "city_info": {
+            "name": "Kottayam",
+            "lat": 9.5916,
+            "lon": 76.5222
+          },
+          "buffer_km": 10,
+          "soil_data": {},
+          "agricultural_suitability": {
+            "highly_suitable": [],
+            "moderately_suitable": [],
+            "marginally_suitable": [],
+            "limitations": []
+          },
+          "management_recommendations": []
+        },
+        "Kannur": {
+          "city_info": {
+            "name": "Kannur",
+            "lat": 11.8745,
+            "lon": 75.3704
+          },
+          "buffer_km": 10,
+          "soil_data": {},
+          "agricultural_suitability": {
+            "highly_suitable": [],
+            "moderately_suitable": [],
+            "marginally_suitable": [],
+            "limitations": []
+          },
+          "management_recommendations": []
+        }
+      },
+      "regional_statistics": {},
+      "agricultural_analysis": {
+        "dominant_soil_types": {
+          "ph_status": "Alkaline soils",
+          "texture": "Clay soils dominant"
+        },
+        "agricultural_potential": {},
+        "major_constraints": [],
+        "recommended_crops": {},
+        "management_priorities": []
+      }
+    }
+  },
+  "agricultural_interpretations": {
+    "pH_guide": {
+      "strongly_acidic": {
+        "range": "pH < 5.0",
+        "suitable_crops": [
+          "Tea",
+          "Blueberries",
+          "Azaleas"
+        ],
+        "management": "Heavy lime application needed, add organic matter",
+        "nutrient_availability": "Iron and aluminum toxicity possible, phosphorus deficiency likely"
+      },
+      "moderately_acidic": {
+        "range": "pH 5.0-6.0",
+        "suitable_crops": [
+          "Rice",
+          "Potatoes",
+          "Berries",
+          "Coffee"
+        ],
+        "management": "Moderate lime application, maintain organic matter",
+        "nutrient_availability": "Good for most nutrients, may need phosphorus supplementation"
+      },
+      "slightly_acidic": {
+        "range": "pH 6.0-7.0",
+        "suitable_crops": [
+          "Most vegetables",
+          "Corn",
+          "Soybeans",
+          "Cotton"
+        ],
+        "management": "Optimal range, minimal amendments needed",
+        "nutrient_availability": "Excellent nutrient availability for most elements"
+      },
+      "neutral": {
+        "range": "pH 7.0-7.5",
+        "suitable_crops": [
+          "Wheat",
+          "Barley",
+          "Legumes",
+          "Most crops"
+        ],
+        "management": "Ideal conditions, maintain current practices",
+        "nutrient_availability": "Optimal for all major nutrients"
+      },
+      "alkaline": {
+        "range": "pH > 7.5",
+        "suitable_crops": [
+          "Spinach",
+          "Cabbage",
+          "Asparagus"
+        ],
+        "management": "Add sulfur or organic acids, improve drainage",
+        "nutrient_availability": "Iron, manganese, zinc deficiency possible"
+      }
+    },
+    "texture_guide": {
+      "clay_soils": {
+        "definition": "Clay > 40%",
+        "characteristics": "High water retention, slow drainage, high fertility potential",
+        "advantages": "Good nutrient retention, drought resistant",
+        "challenges": "Poor drainage, compaction risk, slow warming",
+        "suitable_crops": [
+          "Rice",
+          "Sugarcane",
+          "Cotton",
+          "Wheat"
+        ],
+        "management": "Improve drainage, avoid working when wet, add organic matter"
+      },
+      "sandy_soils": {
+        "definition": "Sand > 70%",
+        "characteristics": "Good drainage, low water retention, easy to work",
+        "advantages": "Good aeration, easy cultivation, quick warming",
+        "challenges": "Nutrient leaching, drought susceptible, low fertility",
+        "suitable_crops": [
+          "Groundnut",
+          "Millets",
+          "Cashew",
+          "Watermelon"
+        ],
+        "management": "Frequent irrigation, regular fertilization, mulching"
+      },
+      "loamy_soils": {
+        "definition": "Balanced clay, silt, sand (20-40% each)",
+        "characteristics": "Ideal agricultural soil with balanced properties",
+        "advantages": "Good water retention and drainage, fertile, easy to work",
+        "challenges": "Maintain organic matter levels",
+        "suitable_crops": [
+          "Most field crops",
+          "Vegetables",
+          "Fruits"
+        ],
+        "management": "Standard practices, maintain soil health"
+      }
+    },
+    "organic_matter_guide": {
+      "very_low": {
+        "range": "SOC < 0.5%",
+        "status": "Critical - immediate action needed",
+        "management": "Heavy organic matter addition, cover crops, reduced tillage",
+        "impact": "Poor soil structure, low fertility, erosion risk"
+      },
+      "low": {
+        "range": "SOC 0.5-1.0%",
+        "status": "Below optimal - improvement needed",
+        "management": "Regular compost addition, crop residue retention",
+        "impact": "Moderate fertility, some structure issues"
+      },
+      "adequate": {
+        "range": "SOC 1.0-2.0%",
+        "status": "Good soil health",
+        "management": "Maintain current practices, monitor levels",
+        "impact": "Good fertility and structure"
+      },
+      "high": {
+        "range": "SOC > 2.0%",
+        "status": "Excellent soil health",
+        "management": "Continue sustainable practices",
+        "impact": "Excellent fertility, structure, and water retention"
+      }
+    }
+  },
+  "summary_statistics": {}
+}

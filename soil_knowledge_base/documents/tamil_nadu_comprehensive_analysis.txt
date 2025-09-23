@@ -1,0 +1,248 @@
+
+COMPREHENSIVE SOIL ANALYSIS: TAMIL NADU
+================================================================================
+
+OVERVIEW
+--------
+This analysis covers Tamil Nadu with detailed soil information extracted from SoilGrids 2.0.
+Analysis includes 10 soil parameters across 6 depth layers.
+Data covers 8 major cities in the region.
+
+REGIONAL SOIL CHARACTERISTICS
+-----------------------------
+
+Bulk Density (BDOD):
+  Description: Bulk density of fine earth fraction
+  Regional Average: 133.31 kg/dm³
+  Range: 67.00 to 165.00 kg/dm³
+  Interpretation: Value: 133.31 kg/dm³
+  Agricultural Importance: Indicates soil compaction, affects water infiltration and root growth
+
+Cation Exchange Capacity (CEC):
+  Description: Soil nutrient holding capacity
+  Regional Average: 250.31 cmol(c)/kg
+  Range: 66.00 to 402.00 cmol(c)/kg
+  Interpretation: High nutrient holding capacity (250.3 cmol/kg) - excellent for agriculture
+  Agricultural Importance: Higher values indicate better nutrient retention and soil fertility
+
+Coarse Fragments (CFVO):
+  Description: Volumetric fraction of coarse fragments > 2mm
+  Regional Average: 109.65 vol%
+  Range: 31.00 to 264.00 vol%
+  Interpretation: Value: 109.65 vol%
+  Agricultural Importance: High values reduce water storage and may limit root development
+
+Clay Content (CLAY):
+  Description: Proportion of clay particles < 0.002mm
+  Regional Average: 312.66 %
+  Range: 135.00 to 428.00 %
+  Interpretation: Clay-dominated soil (313%) - high fertility but may have drainage issues
+  Agricultural Importance: Affects water retention, nutrient availability, and soil structure
+
+Sand Content (SAND):
+  Description: Proportion of sand particles 0.05-2mm
+  Regional Average: 403.27 %
+  Range: 253.00 to 767.00 %
+  Interpretation: Value: 403.27 %
+  Agricultural Importance: Affects drainage, aeration, and soil workability
+
+Silt Content (SILT):
+  Description: Proportion of silt particles 0.002-0.05mm
+  Regional Average: 284.44 %
+  Range: 98.00 to 430.00 %
+  Interpretation: Value: 284.44 %
+  Agricultural Importance: Influences water retention and provides balanced soil properties
+
+Soil Organic Carbon (SOC):
+  Description: Organic carbon content in soil
+  Regional Average: 345.57 g/kg
+  Range: 148.00 to 1280.00 g/kg
+  Interpretation: High organic carbon (34.6%) - excellent soil health
+  Agricultural Importance: Key indicator of soil health, fertility, and carbon storage
+
+Organic Carbon Density (OCD):
+  Description: Organic carbon density in soil profile
+  Regional Average: 308.82 kg/m²
+  Range: 183.00 to 648.00 kg/m²
+  Interpretation: Value: 308.82 kg/m²
+  Agricultural Importance: Important for carbon sequestration and climate studies
+
+
+CITY-SPECIFIC SOIL PROFILES
+---------------------------
+
+CHENNAI:
+  Location: 13.08°N, 80.27°E
+  Analysis Radius: 10 km
+  
+  Key Soil Properties:
+    Soil pH: 66.71 pH units - Alkaline (pH 66.7) - may need soil amendments
+    Soil Organic Carbon: 392.93 g/kg - High organic carbon (39.3%) - excellent soil health
+    Clay Content: 315.55 % - Clay-dominated soil (316%) - high fertility but may have drainage issues
+    Sand Content: 366.35 % - Value: 366.35 %
+    Silt Content: 318.12 % - Value: 318.12 %
+    Cation Exchange Capacity: 255.79 cmol(c)/kg - High nutrient holding capacity (255.8 cmol/kg) - excellent for agriculture
+    Bulk Density: 133.82 kg/dm³ - Value: 133.82 kg/dm³
+  
+  Crop Suitability:
+    Highly Suitable: Sugarcane, Rice
+    Limitations: Alkaline soil may cause nutrient deficiencies, Heavy clay soil - drainage may be poor
+  
+  Management Recommendations:
+    • Add sulfur or organic acids to lower pH from 66.7 to neutral range
+    • Improve drainage through raised beds or subsurface drainage systems
+    • Avoid field operations when soil is wet to prevent compaction
+
+COIMBATORE:
+  Location: 11.02°N, 76.96°E
+  Analysis Radius: 10 km
+  
+  Key Soil Properties:
+    Soil pH: 70.33 pH units - Alkaline (pH 70.3) - may need soil amendments
+    Soil Organic Carbon: 271.29 g/kg - High organic carbon (27.1%) - excellent soil health
+    Clay Content: 260.37 % - Clay-dominated soil (260%) - high fertility but may have drainage issues
+    Sand Content: 499.98 % - Value: 499.98 %
+    Silt Content: 239.65 % - Value: 239.65 %
+    Cation Exchange Capacity: 236.50 cmol(c)/kg - High nutrient holding capacity (236.5 cmol/kg) - excellent for agriculture
+    Bulk Density: 139.85 kg/dm³ - Value: 139.85 kg/dm³
+  
+  Crop Suitability:
+    Highly Suitable: Sugarcane, Rice
+    Limitations: Alkaline soil may cause nutrient deficiencies, Heavy clay soil - drainage may be poor
+  
+  Management Recommendations:
+    • Add sulfur or organic acids to lower pH from 70.3 to neutral range
+    • Improve drainage through raised beds or subsurface drainage systems
+    • Avoid field operations when soil is wet to prevent compaction
+
+MADURAI:
+  Location: 9.93°N, 78.12°E
+  Analysis Radius: 10 km
+  
+  Key Soil Properties:
+    Soil pH: 72.11 pH units - Alkaline (pH 72.1) - may need soil amendments
+    Soil Organic Carbon: 297.87 g/kg - High organic carbon (29.8%) - excellent soil health
+    Clay Content: 325.75 % - Clay-dominated soil (326%) - high fertility but may have drainage issues
+    Sand Content: 412.18 % - Value: 412.18 %
+    Silt Content: 262.08 % - Value: 262.08 %
+    Cation Exchange Capacity: 294.22 cmol(c)/kg - High nutrient holding capacity (294.2 cmol/kg) - excellent for agriculture
+    Bulk Density: 150.00 kg/dm³ - Value: 150.00 kg/dm³
+  
+  Crop Suitability:
+    Highly Suitable: Sugarcane, Rice
+    Limitations: Alkaline soil may cause nutrient deficiencies, Heavy clay soil - drainage may be poor
+  
+  Management Recommendations:
+    • Add sulfur or organic acids to lower pH from 72.1 to neutral range
+    • Improve drainage through raised beds or subsurface drainage systems
+    • Avoid field operations when soil is wet to prevent compaction
+
+TIRUCHIRAPPALLI:
+  Location: 10.79°N, 78.70°E
+  Analysis Radius: 10 km
+  
+  Key Soil Properties:
+    Soil pH: 73.94 pH units - Alkaline (pH 73.9) - may need soil amendments
+    Soil Organic Carbon: 307.91 g/kg - High organic carbon (30.8%) - excellent soil health
+    Clay Content: 358.64 % - Clay-dominated soil (359%) - high fertility but may have drainage issues
+    Sand Content: 366.96 % - Value: 366.96 %
+    Silt Content: 274.41 % - Value: 274.41 %
+    Cation Exchange Capacity: 311.49 cmol(c)/kg - High nutrient holding capacity (311.5 cmol/kg) - excellent for agriculture
+    Bulk Density: 144.74 kg/dm³ - Value: 144.74 kg/dm³
+  
+  Crop Suitability:
+    Highly Suitable: Sugarcane, Rice
+    Limitations: Alkaline soil may cause nutrient deficiencies, Heavy clay soil - drainage may be poor
+  
+  Management Recommendations:
+    • Add sulfur or organic acids to lower pH from 73.9 to neutral range
+    • Improve drainage through raised beds or subsurface drainage systems
+    • Avoid field operations when soil is wet to prevent compaction
+
+SALEM:
+  Location: 11.66°N, 78.15°E
+  Analysis Radius: 10 km
+  
+  Key Soil Properties:
+    Soil pH: 67.47 pH units - Alkaline (pH 67.5) - may need soil amendments
+    Soil Organic Carbon: 300.32 g/kg - High organic carbon (30.0%) - excellent soil health
+    Clay Content: 341.92 % - Clay-dominated soil (342%) - high fertility but may have drainage issues
+    Sand Content: 369.04 % - Value: 369.04 %
+    Silt Content: 289.05 % - Value: 289.05 %
+    Cation Exchange Capacity: 302.16 cmol(c)/kg - High nutrient holding capacity (302.2 cmol/kg) - excellent for agriculture
+    Bulk Density: 136.69 kg/dm³ - Value: 136.69 kg/dm³
+  
+  Crop Suitability:
+    Highly Suitable: Sugarcane, Rice
+    Limitations: Alkaline soil may cause nutrient deficiencies, Heavy clay soil - drainage may be poor
+  
+  Management Recommendations:
+    • Add sulfur or organic acids to lower pH from 67.5 to neutral range
+    • Improve drainage through raised beds or subsurface drainage systems
+    • Avoid field operations when soil is wet to prevent compaction
+
+TIRUNELVELI:
+  Location: 8.71°N, 77.76°E
+  Analysis Radius: 10 km
+  
+  Key Soil Properties:
+    Soil pH: 69.93 pH units - Alkaline (pH 69.9) - may need soil amendments
+    Soil Organic Carbon: 385.53 g/kg - High organic carbon (38.6%) - excellent soil health
+    Clay Content: 330.29 % - Clay-dominated soil (330%) - high fertility but may have drainage issues
+    Sand Content: 398.00 % - Value: 398.00 %
+    Silt Content: 271.71 % - Value: 271.71 %
+    Cation Exchange Capacity: 249.84 cmol(c)/kg - High nutrient holding capacity (249.8 cmol/kg) - excellent for agriculture
+    Bulk Density: 145.32 kg/dm³ - Value: 145.32 kg/dm³
+  
+  Crop Suitability:
+    Highly Suitable: Sugarcane, Rice
+    Limitations: Alkaline soil may cause nutrient deficiencies, Heavy clay soil - drainage may be poor
+  
+  Management Recommendations:
+    • Add sulfur or organic acids to lower pH from 69.9 to neutral range
+    • Improve drainage through raised beds or subsurface drainage systems
+    • Avoid field operations when soil is wet to prevent compaction
+
+ERODE:
+  Location: 11.34°N, 77.72°E
+  Analysis Radius: 10 km
+  
+  Key Soil Properties:
+    Soil pH: 69.11 pH units - Alkaline (pH 69.1) - may need soil amendments
+    Soil Organic Carbon: 248.36 g/kg - High organic carbon (24.8%) - excellent soil health
+    Clay Content: 296.53 % - Clay-dominated soil (297%) - high fertility but may have drainage issues
+    Sand Content: 374.33 % - Value: 374.33 %
+    Silt Content: 329.14 % - Value: 329.14 %
+    Cation Exchange Capacity: 309.96 cmol(c)/kg - High nutrient holding capacity (310.0 cmol/kg) - excellent for agriculture
+    Bulk Density: 140.71 kg/dm³ - Value: 140.71 kg/dm³
+  
+  Crop Suitability:
+    Highly Suitable: Sugarcane, Rice
+    Limitations: Alkaline soil may cause nutrient deficiencies, Heavy clay soil - drainage may be poor
+  
+  Management Recommendations:
+    • Add sulfur or organic acids to lower pH from 69.1 to neutral range
+    • Improve drainage through raised beds or subsurface drainage systems
+    • Avoid field operations when soil is wet to prevent compaction
+
+VELLORE:
+  Location: 12.92°N, 79.13°E
+  Analysis Radius: 10 km
+  
+  Key Soil Properties:
+    Soil pH: 70.03 pH units - Alkaline (pH 70.0) - may need soil amendments
+    Soil Organic Carbon: 285.82 g/kg - High organic carbon (28.6%) - excellent soil health
+    Clay Content: 311.13 % - Clay-dominated soil (311%) - high fertility but may have drainage issues
+    Sand Content: 376.97 % - Value: 376.97 %
+    Silt Content: 311.91 % - Value: 311.91 %
+    Cation Exchange Capacity: 300.29 cmol(c)/kg - High nutrient holding capacity (300.3 cmol/kg) - excellent for agriculture
+    Bulk Density: 140.07 kg/dm³ - Value: 140.07 kg/dm³
+  
+  Crop Suitability:
+    Highly Suitable: Sugarcane, Rice
+    Limitations: Alkaline soil may cause nutrient deficiencies, Heavy clay soil - drainage may be poor
+  
+  Management Recommendations:
+    • Add sulfur or organic acids to lower pH from 70.0 to neutral range
+    • Improve drainage through raised beds or subsurface drainage systems
+    • Avoid field operations when soil is wet to prevent compaction
