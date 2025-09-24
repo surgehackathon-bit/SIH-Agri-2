@@ -796,23 +796,22 @@ if "vectors" not in st.session_state:
                 st.stop()
             
             # 4. Process all documents
-            final_documents=[]
             @st.cache_resource(show_spinner="🔨 Building FAISS index...")
-            def build_vectorstore(all_documents, embeddings):
+            def build_vectorstore(documents, embeddings):
                 text_splitter = RecursiveCharacterTextSplitter(
                     chunk_size=1200,
                     chunk_overlap=200,
                     separators=["\n\n", "\n", ".", " "]
                 )
-                final_documents=text_splitter.split_documents(all_documents)
-                return FAISS.from_documents(final_documents, embeddings), final_documents
-            if "all_documents" not in st.session_state:
-                all_documents=[]
-                st.session_state["all_documents"]=all_documents
-            else:
-                all_documents=st.session_state["all_documents"]
-            vectors = build_vectorstore(all_documents, embeddings)
-            # Summary
+                final_docs = text_splitter.split_documents(documents)
+                vectors = FAISS.from_documents(final_docs, embeddings)
+                return vectors, final_docs
+            
+            # Build vectorstore
+            vectors, final_documents = build_vectorstore(all_documents, embeddings)
+            st.session_state.vectors = vectors
+            
+            # Summary stats
             soil_docs = len([d for d in final_documents if d.metadata.get("category", "").startswith("soil")])
             crop_docs = len([d for d in final_documents if d.metadata.get("category") == "crop_cycle"])
             scheme_docs = len([d for d in final_documents if d.metadata.get("category") == "farming_schemes"])
