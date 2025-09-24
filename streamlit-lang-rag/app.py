@@ -739,9 +739,9 @@ with st.sidebar:
 if "vectors" not in st.session_state:
     with st.spinner("🔨 Building comprehensive agricultural knowledge base..."):
         try:
+            MODEL_PATH = Path(__file__).parent.parent / "models" / "bge-small-en-v1.5"
             @st.cache_resource(show_spinner="🔨 Loading embeddings...")
 
-            MODEL_PATH = Path(__file__).parent.parent / "models" / "bge-small-en-v1.5"
 
 
             def get_embeddings():
