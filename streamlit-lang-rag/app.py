@@ -14,7 +14,7 @@ load_dotenv()
 
 # LangChain components
 from langchain_community.document_loaders import DirectoryLoader, TextLoader, WebBaseLoader
-from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -23,23 +23,6 @@ from langchain.chains import create_retrieval_chain
 from langchain_groq import ChatGroq
 from langchain.schema import Document
 
-def reset_session_state():
-    """Reset problematic session state variables"""
-    keys_to_clear = ['vectors', 'embeddings', 'retrieval_chain', 'llm']
-    for key in keys_to_clear:
-        if key in st.session_state:
-            del st.session_state[key]
-
-# Add error boundary at the very beginning of your main logic
-try:
-    # Your existing code here
-    pass
-except Exception as e:
-    st.error("App encountered an error. Resetting...")
-    st.cache_resource.clear()
-    reset_session_state()
-    st.rerun()
-    
 # --- Page Configuration ---
 st.set_page_config(
     page_title="AI Soil & Agriculture Assistant",
@@ -729,13 +712,14 @@ with st.sidebar:
     """)
     
     # API Key configuration
-    
-    if st.button("🔄 Reset App Cache"):
-        st.cache_resource.clear()
-        st.cache_data.clear()
-        reset_session_state()
-        st.success("Cache cleared! Please reload the page.")
-        st.rerun()
+    try:
+        groq_api_key = os.environ["GROQ_API_KEY"]
+        st.success("✅ Groq API Key loaded from environment")
+    except KeyError:
+        groq_api_key = st.text_input("🔑 Enter your Groq API Key:", type="password")
+        if not groq_api_key:
+            st.error("Please provide your Groq API Key to continue.")
+            st.stop()
     
     # Model selection
     available_models = [
@@ -753,30 +737,13 @@ with st.sidebar:
 
 # --- Enhanced Session State Initialization ---
 if "vectors" not in st.session_state:
-    if "initialization_step" not in st.session_state:
-        st.session_state.initialization_step = "starting"
-    groq_api_key = None
-    try:
-        groq_api_key = st.secrets["GROQ_API_KEY"]
-        st.sidebar.success("✅ Groq API Key loaded from Streamlit secrets")
-    except KeyError:
-        from dotenv import load_dotenv
-        load_dotenv()
-        groq_api_key = os.getenv("GROQ_API_KEY")
-    
-    if not groq_api_key:
-        st.sidebar.error("❌ Please provide your Groq API Key to continue.")
-        st.stop()
     with st.spinner("🔨 Building comprehensive agricultural knowledge base..."):
         try:
-            reset_session_state()
-            @st.cache_resource
+            @st.cache_resource(show_spinner="🔨 Loading embeddings...")
             def get_embeddings():
-                return FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
-            if "embeddings" not in st.session_state:
-                st.session_state.embeddings = get_embeddings()
-            llm = get_llm(groq_api_key, selected_model)
-
+                return HuggingFaceEmbeddings(model_name="../models/bge-small-en-v1.5")
+            # Initialize embeddings
+            embeddings=get_embeddings()
             
             all_documents = []
             
@@ -796,8 +763,16 @@ if "vectors" not in st.session_state:
             
             # 3. Load web-based farming information
             try:
-                web_loader = WebBaseLoader(FARMER_URLS)
-                web_documents = web_loader.load()
+                @st.cache_data(ttl=86400)  # cache for 1 day
+                def fetch_web_documents():
+                    try:
+                        loader = WebBaseLoader(FARMER_URLS)
+                        return loader.load()
+                    except Exception as e:
+                        return []
+                
+                
+                web_documents = fetch_web_documents()
                 
                 # Enhance web document metadata
                 for doc in web_documents:
@@ -817,24 +792,22 @@ if "vectors" not in st.session_state:
                 st.stop()
             
             # 4. Process all documents
-            text_splitter = RecursiveCharacterTextSplitter(
-                chunk_size=1200,
-                chunk_overlap=200,
-                separators=["\n\n", "\n", ".", " "]
-            )
-            final_documents = text_splitter.split_documents(all_documents)
-            
-            # 5. Create vector store
-            try:
-                st.session_state.initialization_step = "loading_documents"
-                st.session_state.vectors = FAISS.from_documents(final_documents, st.session_state.embeddings)
-            except Exception as e:
-                st.cache_resource.clear()
-                # Clear embeddings and recreate
-                st.session_state.embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
-                st.session_state.initialization_step = "loading_documents"
-                st.session_state.vectors = FAISS.from_documents(final_documents, st.session_state.embeddings)
-            
+            final_documents=[]
+            @st.cache_resource(show_spinner="🔨 Building FAISS index...")
+            def build_vectorstore(all_documents, embeddings):
+                text_splitter = RecursiveCharacterTextSplitter(
+                    chunk_size=1200,
+                    chunk_overlap=200,
+                    separators=["\n\n", "\n", ".", " "]
+                )
+                final_documents=text_splitter.split_documents(all_documents)
+                return FAISS.from_documents(final_documents, embeddings), final_documents
+            if "all_documents" not in st.session_state:
+                all_documents=[]
+                st.session_state["all_documents"]=all_documents
+            else:
+                all_documents=st.session_state["all_documents"]
+            vectors = build_vectorstore(all_documents, embeddings)
             # Summary
             soil_docs = len([d for d in final_documents if d.metadata.get("category", "").startswith("soil")])
             crop_docs = len([d for d in final_documents if d.metadata.get("category") == "crop_cycle"])
@@ -849,29 +822,16 @@ if "vectors" not in st.session_state:
             """)
             
         except Exception as e:
-            # Clear caches and reset state first
-            st.cache_resource.clear()
-            reset_session_state()
-        
-            # Show error once
-            st.error(f"❌ Failed to build knowledge base at step: {st.session_state.get('initialization_step', 'unknown')}")
-            st.error(f"Error details: {e}")
-        
-            # Force a clean rerun instead of stopping mid-way
-            st.rerun()
+            st.error(f"❌ Failed to build knowledge base: {e}")
+            st.stop()
 
 # --- Enhanced RAG Chain Setup ---
 if "vectors" in st.session_state:
-    @st.cache_resource
-    def get_llm(api_key, model_name):
-        try:
-            return ChatGroq(groq_api_key=api_key, model_name=model_name)
-        except Exception as e:
-            st.cache_resource.clear()
-            return ChatGroq(groq_api_key=api_key, model_name=model_name)
     try:
         # Initialize LLM
-        llm = get_llm(groq_api_key,selected_model
+        llm = ChatGroq(
+            groq_api_key=groq_api_key,
+            model_name=selected_model
         )
 
         # Enhanced prompt template with soil parameter ranges
