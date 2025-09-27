@@ -36,6 +36,16 @@ def validate_secrets():
 
 # Call this function early in your app
 validate_secrets()
+import gc
+
+def cleanup_memory():
+    """Clean up memory periodically"""
+    gc.collect()
+    
+# Add this call in your main processing sections
+if st.button("🔄 Clear Memory", key="cleanup_memory"):
+    cleanup_memory()
+    st.success("✅ Memory cleaned up")
 # Set USER_AGENT to avoid warnings
 os.environ.setdefault('USER_AGENT', st.secrets.get("settings", {}).get("USER_AGENT", "StreamlitAgricultureApp/1.0"))
 
@@ -2359,7 +2369,7 @@ if "vectors" not in st.session_state:
                 return HuggingFaceEmbeddings(model_name=str(MODEL_PATH))
             # Initialize embeddings
             embeddings=get_embeddings()
-
+            st.session_state.embeddings=get_embeddings()
             all_documents = []
 
             # 1. Load soil knowledge base if available
@@ -2399,8 +2409,8 @@ if "vectors" not in st.session_state:
 
             # 4. Process all documents
             text_splitter = RecursiveCharacterTextSplitter(
-                chunk_size=1200,
-                chunk_overlap=200,
+                chunk_size=800,
+                chunk_overlap=100,
                 separators=["\n\n", "\n", ".", " "]
             )
             final_documents = text_splitter.split_documents(all_documents)
@@ -2546,7 +2556,7 @@ You are a world-class agricultural expert. Your knowledge covers:
         document_chain = create_stuff_documents_chain(llm, prompt_template)
         retriever = st.session_state.vectors.as_retriever(
             search_type="similarity",
-            search_kwargs={"k": 8}
+            search_kwargs={"k": 4}
         )
         retrieval_chain = create_retrieval_chain(retriever, document_chain)
 
