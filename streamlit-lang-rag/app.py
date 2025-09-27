@@ -1078,10 +1078,22 @@ class SarvamVoiceProcessor:
             # Step 1: Speech to Text with language detection
             if show_progress:
                 st.info("🎯 Step 1: Speech-to-Text with language detection...")
-            
+            from langdetect import detect
             transcript, detected_language, stt_success = self.speech_to_text(
                 audio_bytes, language=None, show_progress=show_progress
             )
+            try:
+                text_lang = detect(transcript)
+                # langdetect returns 'en' for English, 'ta' for Tamil, 'ml' for Malayalam, etc.
+                if text_lang == "en":
+                    detected_lang = "english"
+                elif text_lang == "ta":
+                    detected_lang = "tamil"
+                elif text_lang == "ml":
+                    detected_lang = "malayalam"
+                # ... extend if needed
+            except Exception:
+                pass
             
             if not stt_success or not transcript:
                 return {
