@@ -493,6 +493,21 @@ class SarvamVoiceProcessor:
 
         # Find working authentication method
         self.working_headers = self._find_working_auth()
+    def _safe_json_response(self, response, show_progress=False):
+        """Safely parse JSON response with error handling"""
+        try:
+            if response.headers.get('content-type', '').startswith('application/json'):
+                return response.json(), True
+            else:
+                if show_progress:
+                    st.error(f"Non-JSON response: {response.headers.get('content-type')}")
+                    st.error(f"Response text: {response.text[:200]}")
+                return None, False
+        except ValueError as e:
+            if show_progress:
+                st.error(f"JSON parsing failed: {e}")
+                st.error(f"Raw response: {response.text[:200]}")
+            return None, False
 
     def _find_working_auth(self) -> dict:
         """Test all authentication methods to find working one"""
@@ -610,8 +625,11 @@ class SarvamVoiceProcessor:
                     )
 
                     if response.status_code == 200:
-                        result = response.json()
-                        transcript = result.get('transcript', '').strip()
+                        try:
+                            result = response.json()
+                            transcript = result.get('transcript', '').strip()
+                        except (ValueError, KeyError) as e:
+                            continue
                         # A transcript length > 5 is a good indicator of a confident detection
                         if transcript and len(transcript) > 5:  
                             end_time = time.time()
@@ -790,8 +808,14 @@ class SarvamVoiceProcessor:
                 st.info(f"📡 API Response: {response.status_code}")
 
             if response.status_code == 200:
-                result = response.json()
-                transcript = result.get('transcript', '').strip()
+                if response.headers.get('content-type', '').startswith('application/json'):
+                    result, success = self._safe_json_response(response, show_progress)
+                    if not success:
+                        return "", language or 'english', False
+                    transcript = result.get('transcript', '').strip()
+                else:
+                    st.error(f"Unexpected response format: {response.headers.get('content-type')}")
+                    return "", language or 'english', False
 
                 if transcript:
                     if show_progress:
@@ -1208,8 +1232,13 @@ class SarvamVoiceProcessor:
             )
 
             if response.status_code == 200:
-                result = response.json()
-                audio_base64 = result.get('audios', [None])[0]
+                try:
+                    result = response.json()
+                    audio_base64 = result.get('audios', [None])[0]
+                except (ValueError, KeyError, IndexError) as e:
+                    if show_progress:
+                        st.error(f"Audio response parsing error: {e}")
+                    return None, False
 
                 if audio_base64:
                     audio_bytes = base64.b64decode(audio_base64)
@@ -1813,8 +1842,13 @@ def process_voice_query_with_selected_language(audio_bytes: bytes, sarvam_proces
                         )
                         
                         if response.status_code == 200:
-                            result = response.json()
-                            final_answer = result.get('translated_text', answer)
+                            try:
+                                result = response.json()
+                                translated_text = result.get('translated_text', text)
+                            except (ValueError, KeyError) as e:
+                                if show_progress:
+                                    st.error(f"JSON parsing error: {e}")
+                                return text, False
                     except:
                         pass
 
