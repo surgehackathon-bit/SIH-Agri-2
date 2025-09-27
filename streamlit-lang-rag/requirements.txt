@@ -1,22 +1,8 @@
-streamlit
-langchain
-langchain-groq
-langchain-community
-beautifulsoup4
-faiss-cpu
-python-dotenv
-ffmpeg-python
-audio-recorder-streamlit
-requests
-
-deep-translator 
-langdetect 
-gTTS
 # Core Streamlit and Web Framework
 streamlit>=1.28.0
 requests>=2.31.0
 
-# Environment Variables
+# Environment and Configuration
 python-dotenv>=1.0.0
 
 # LangChain and RAG Components
@@ -24,38 +10,26 @@ langchain>=0.1.0
 langchain-community>=0.0.20
 langchain-groq>=0.1.0
 langchain-core>=0.1.0
-faiss-cpu>=1.7.4
 
-# Text Processing and Embeddings
+# Vector Database and Embeddings
+faiss-cpu>=1.7.4
 fastembed>=0.2.0
-sentence-transformers>=2.2.0
 
 # Data Processing
 pandas>=2.0.0
 numpy>=1.24.0
 
-# Audio Processing (for voice features)
-sounddevice>=0.4.6
-scipy>=1.10.0
-
-# Async Processing
-aiohttp>=3.9.0
-
-# File Processing
-pathlib2>=2.3.7
-
-# Web scraping (for existing functionality)
+# Web Scraping
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
 
-# Text Splitting
+# Audio Processing and Recording
+audio-recorder-streamlit>=0.0.8
+sounddevice>=0.4.6
+scipy>=1.10.0
+
+# Text Processing
 tiktoken>=0.5.0
 
-# Additional utilities
-pathlib>=1.0.1
-base64
-json
-threading
-queue
-concurrent.futures
-datetime
+# Async Processing
+aiohttp>=3.9.0
