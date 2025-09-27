@@ -1772,15 +1772,12 @@ def handle_uploaded_audio_with_native_response(sarvam_processor, retrieval_chain
         stop_autoscroll()
 
 def process_voice_query_with_selected_language(audio_bytes: bytes,sarvam_processor: SarvamVoiceProcessor,retrieval_chain,selected_language: str = None) -> dict:
-    """Voice processing pipeline that outputs in the detected input language.
-    Always returns a dictionary with consistent keys.
-    """
+    """Voice processing pipeline that ensures output is in the same language as input."""
 
     total_start_time = time.time()
 
     try:
         with st.spinner("🎤 Processing voice input..."):
-            # Step 1: Speech to Text with auto language detection
             transcript, detected_lang, stt_success = sarvam_processor.speech_to_text(audio_bytes, None)
 
             if not stt_success or not transcript.strip():
@@ -1789,52 +1786,37 @@ def process_voice_query_with_selected_language(audio_bytes: bytes,sarvam_process
                     "error": "Could not convert speech to text. Please try again.",
                     "transcript": transcript,
                     "detected_language": detected_lang,
+                    "final_answer": None,
                     "answer": None
                 }
 
-            st.info(f"🗣️ **You said:** {transcript}")
+            st.info(f"🗣️ **You said ({detected_lang}):** {transcript}")
 
-        # Use detected language for all output (ignore selected_language parameter if not set)
-        output_language = selected_language if selected_language else detected_lang
-
-        # Step 2: Translate to English if needed
+        # Step 2: Translate transcript to English for RAG
         english_text = transcript
         if detected_lang != "english":
-            with st.spinner("🔄 Translating to English..."):
-                english_text, translate_success = sarvam_processor.translate_text(
-                    transcript, detected_lang, "english"
-                )
-                if translate_success and english_text != transcript:
-                    st.info(f"🔄 **English:** {english_text}")
+            english_text, _ = sarvam_processor.translate_text(transcript, detected_lang, "english")
 
-        # Step 3: Get answer from RAG system (always in English)
+        # Step 3: Query RAG system (always in English)
         with st.spinner("🧠 Generating response..."):
             start_time = time.time()
             response = retrieval_chain.invoke({"input": english_text})
             response_time = round(time.time() - start_time, 2)
-
-            # response is dict-like (from LangChain) with 'answer'
             answer = response.get("answer", "")
 
-        # Step 4: Translate back to detected language if needed
+        # Step 4: Translate AI answer back to detected language (ALWAYS!)
         final_answer = answer
         if detected_lang != "english":
-            with st.spinner(f"🔄 Translating answer to {detected_lang}..."):
-                translated, translate_back_success = sarvam_processor.translate_text(
-                    answer, "english", output_language
-                )
-                if translate_back_success:
-                    final_answer = translated
+            final_answer, _ = sarvam_processor.translate_text(answer, "english", detected_lang)
 
         return {
             "success": True,
             "error": None,
             "transcript": transcript,
             "detected_language": detected_lang,
-            "target_language": output_language,
             "english_text": english_text,
-            "answer": answer,
-            "final_answer": final_answer,
+            "answer": answer,            # English version
+            "final_answer": final_answer, # Same language as input
             "response_time": round(time.time() - total_start_time, 2)
         }
 
@@ -1844,11 +1826,12 @@ def process_voice_query_with_selected_language(audio_bytes: bytes,sarvam_process
             "error": f"Voice query processing error: {str(e)}",
             "transcript": None,
             "detected_language": None,
-            "answer": None,
-            "final_answer": None
+            "final_answer": None,
+            "answer": None
         }
+
 def display_voice_response(voice_result: dict):
-    """Display voice processing results with native language first - FIXED"""
+    """Display voice processing results with same-language output"""
 
     if not voice_result.get("success", False):
         st.error(f"❌ Error: {voice_result.get('error', 'Unknown error')}")
@@ -1856,7 +1839,6 @@ def display_voice_response(voice_result: dict):
 
     transcript = voice_result.get("transcript", "")
     detected_lang = voice_result.get("detected_language", "unknown")
-    target_lang = voice_result.get("target_language", "english")
     final_answer = voice_result.get("final_answer", "")
     english_answer = voice_result.get("answer", "")
 
@@ -1864,17 +1846,18 @@ def display_voice_response(voice_result: dict):
     if transcript:
         st.markdown(f"**🗣️ Transcribed ({detected_lang}):** {transcript}")
 
-    # Show AI response in native language first
+    # Show AI response (always in detected language)
     st.markdown("### 🧠 AI Response:")
     st.markdown(final_answer)
 
-    # Show English version if different
-    if final_answer and english_answer and final_answer != english_answer:
+    # Show English version if input wasn’t English
+    if detected_lang != "english" and english_answer and final_answer != english_answer:
         with st.expander("📖 View English Version"):
             st.markdown(english_answer)
 
-    # Show metadata
-    st.info(f"🌍 Detected language: {detected_lang} → Responded in {target_lang}")
+    # Meta info
+    st.info(f"🌍 Answered in your input language: {detected_lang}")
+
 
 def process_text_query_with_language_detection(user_input: str, sarvam_processor: SarvamVoiceProcessor, retrieval_chain) -> dict:
     """NEW FUNCTION: Process text query with language detection and native response"""
