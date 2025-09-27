@@ -11,6 +11,7 @@ langchain-community>=0.0.20
 langchain-groq>=0.1.0
 langchain-core>=0.1.0
 langchain-huggingface
+sentence-transformers
 
 # Vector Database and Embeddings
 faiss-cpu>=1.7.4
