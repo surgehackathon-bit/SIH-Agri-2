@@ -2718,7 +2718,12 @@ You are a world-class agricultural expert. Your knowledge covers:
 
             # Clear to prevent reprocessing
             st.session_state.voice_audio_bytes = None
-
+            if isinstance(voice_result, requests.Response):
+                try:
+                    voice_result = voice_result.json()
+                except Exception:
+                    voice_result = {"success": False, "error": "Unexpected API response format"}
+            
             display_voice_response(voice_result)
 
         # Upload processing
