@@ -1771,8 +1771,10 @@ def handle_uploaded_audio_with_native_response(sarvam_processor, retrieval_chain
         # Stop auto-scrolling
         stop_autoscroll()
 
-def process_voice_query_with_selected_language(audio_bytes: bytes, sarvam_processor: SarvamVoiceProcessor, retrieval_chain, selected_language: str = None) -> dict:
-    """Voice processing pipeline that outputs in the detected input language"""
+def process_voice_query_with_selected_language(audio_bytes: bytes,sarvam_processor: SarvamVoiceProcessor,retrieval_chain,selected_language: str = None) -> dict:
+    """Voice processing pipeline that outputs in the detected input language.
+    Always returns a dictionary with consistent keys.
+    """
 
     total_start_time = time.time()
 
@@ -1783,20 +1785,25 @@ def process_voice_query_with_selected_language(audio_bytes: bytes, sarvam_proces
 
             if not stt_success or not transcript.strip():
                 return {
-                    'success': False,
-                    'error': 'Could not convert speech to text. Please try again.'
+                    "success": False,
+                    "error": "Could not convert speech to text. Please try again.",
+                    "transcript": transcript,
+                    "detected_language": detected_lang,
+                    "answer": None
                 }
 
             st.info(f"🗣️ **You said:** {transcript}")
 
-        # Use detected language for all output (ignore selected_language parameter)
+        # Use detected language for all output (ignore selected_language parameter if not set)
         output_language = selected_language if selected_language else detected_lang
 
         # Step 2: Translate to English if needed
         english_text = transcript
-        if detected_lang != 'english':
+        if detected_lang != "english":
             with st.spinner("🔄 Translating to English..."):
-                english_text, translate_success = sarvam_processor.translate_text(transcript, detected_lang, 'english')
+                english_text, translate_success = sarvam_processor.translate_text(
+                    transcript, detected_lang, "english"
+                )
                 if translate_success and english_text != transcript:
                     st.info(f"🔄 **English:** {english_text}")
 
@@ -1806,77 +1813,41 @@ def process_voice_query_with_selected_language(audio_bytes: bytes, sarvam_proces
             response = retrieval_chain.invoke({"input": english_text})
             response_time = round(time.time() - start_time, 2)
 
-            answer = response['answer']
+            # response is dict-like (from LangChain) with 'answer'
+            answer = response.get("answer", "")
 
-        # Step 4: Translate to DETECTED language (use detected language for response)
+        # Step 4: Translate back to detected language if needed
         final_answer = answer
-        if detected_lang != 'english':
+        if detected_lang != "english":
             with st.spinner(f"🔄 Translating answer to {detected_lang}..."):
-                final_answer, translate_back_success = sarvam_processor.translate_text(answer, 'english', output_language)
-            
-                if not translate_back_success:
-                    # Try multiple translation attempts for better success
-                    for attempt in range(3):
-                        final_answer, translate_back_success = sarvam_processor.translate_text(answer, 'english', detected_lang)
-                        if translate_back_success and final_answer != answer:
-                            break
-                        time.sleep(0.5)  # Brief delay between attempts
-                
-                if not translate_back_success or final_answer == answer:
-                    # Force translation by trying different modes
-                    payload = {
-                        "input": answer,
-                        "source_language_code": "en-IN",
-                        "target_language_code": sarvam_processor.language_codes.get(detected_lang, 'hi-IN'),
-                        "speaker_gender": "Female",
-                        "mode": "casual",
-                        "model": "mayura:v1"
-                    }
-                    
-                    try:
-                        response = requests.post(
-                            f"{sarvam_processor.base_url}/translate",
-                            headers=sarvam_processor.working_headers,
-                            json=payload,
-                            timeout=30
-                        )
-                        
-                        if response.status_code == 200:
-                            try:
-                                result = response.json()
-                                translated_text = result.get('translated_text', text)
-                            except (ValueError, KeyError) as e:
-                                if show_progress:
-                                    st.error(f"JSON parsing error: {e}")
-                                return text, False
-                    except:
-                        pass
-
-        # Step 5: Convert answer to speech in DETECTED language (same as input)
-        with st.spinner(f"🔊 Generating speech..."):
-            audio_response, tts_success = sarvam_processor.text_to_speech(final_answer, output_language)
-        total_response_time = round(time.time() - total_start_time, 2)
+                translated, translate_back_success = sarvam_processor.translate_text(
+                    answer, "english", output_language
+                )
+                if translate_back_success:
+                    final_answer = translated
 
         return {
-            'success': True,
-            'original_transcript': transcript,
-            'english_text': english_text,
-            'answer_text': answer,  # English version
-            'translated_answer': final_answer,  # Detected language version
-            'audio_response': audio_response if tts_success else None,
-            'response_time': response_time,
-            'total_response_time': total_response_time,
-            'context': response['context'],
-            'language': detected_lang,  # Use detected language for display (same as input)
-            'input_language': detected_lang,  # Keep track of input language
-            'audio_generation_success': tts_success
+            "success": True,
+            "error": None,
+            "transcript": transcript,
+            "detected_language": detected_lang,
+            "target_language": output_language,
+            "english_text": english_text,
+            "answer": answer,
+            "final_answer": final_answer,
+            "response_time": round(time.time() - total_start_time, 2)
         }
 
     except Exception as e:
         return {
-            'success': False,
-            'error': f'Voice processing error: {str(e)}'
+            "success": False,
+            "error": f"Voice query processing error: {str(e)}",
+            "transcript": None,
+            "detected_language": None,
+            "answer": None,
+            "final_answer": None
         }
+
 
 
 
