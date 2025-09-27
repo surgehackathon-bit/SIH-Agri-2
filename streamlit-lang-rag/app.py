@@ -306,7 +306,7 @@ except KeyError as e:
 
 # LangChain components
 from langchain_community.document_loaders import DirectoryLoader, TextLoader, WebBaseLoader
-from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -2352,7 +2352,11 @@ if "vectors" not in st.session_state:
     with st.spinner("🔨 Building comprehensive agricultural knowledge base..."):
         try:
             # Initialize embeddings
-            st.session_state.embeddings = FastEmbedEmbeddings(model_name="../models/bge-small-en-v1.5")
+            @st.cache_resource(show_spinner="🔨 Loading embeddings...")
+            def get_embeddings():
+                return HuggingFaceEmbeddings(model_name="../models/bge-small-en-v1.5")
+            # Initialize embeddings
+            embeddings=get_embeddings()
 
             all_documents = []
 
