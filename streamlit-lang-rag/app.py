@@ -2352,7 +2352,7 @@ if "vectors" not in st.session_state:
     with st.spinner("🔨 Building comprehensive agricultural knowledge base..."):
         try:
             # Initialize embeddings
-            st.session_state.embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
+            st.session_state.embeddings = FastEmbedEmbeddings(model_name="../models/bge-small-en-v1.5")
 
             all_documents = []
 
