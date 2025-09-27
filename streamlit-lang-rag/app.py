@@ -1771,8 +1771,13 @@ def handle_uploaded_audio_with_native_response(sarvam_processor, retrieval_chain
         # Stop auto-scrolling
         stop_autoscroll()
 
-def process_voice_query_with_selected_language(audio_bytes: bytes,sarvam_processor: SarvamVoiceProcessor,retrieval_chain,selected_language: str = None) -> dict:
-    """Voice processing pipeline that ensures output is in the same language as input."""
+def process_voice_query_with_selected_language(
+    audio_bytes: bytes,
+    sarvam_processor: SarvamVoiceProcessor,
+    retrieval_chain,
+    selected_language: str = None
+) -> dict:
+    """Voice processing pipeline that ensures output is always in the same language as input."""
 
     total_start_time = time.time()
 
@@ -1794,8 +1799,12 @@ def process_voice_query_with_selected_language(audio_bytes: bytes,sarvam_process
 
         # Step 2: Translate transcript to English for RAG
         english_text = transcript
-        if detected_lang != "english":
-            english_text, _ = sarvam_processor.translate_text(transcript, detected_lang, "english")
+        if detected_lang and detected_lang.lower() != "english":
+            translated_text, translate_ok = sarvam_processor.translate_text(
+                transcript, detected_lang, "english"
+            )
+            if translate_ok and translated_text.strip():
+                english_text = translated_text
 
         # Step 3: Query RAG system (always in English)
         with st.spinner("🧠 Generating response..."):
@@ -1804,19 +1813,23 @@ def process_voice_query_with_selected_language(audio_bytes: bytes,sarvam_process
             response_time = round(time.time() - start_time, 2)
             answer = response.get("answer", "")
 
-        # Step 4: Translate AI answer back to detected language (ALWAYS!)
+        # Step 4: Translate AI answer back into detected language (ALWAYS!)
         final_answer = answer
-        if detected_lang != "english":
-            final_answer, _ = sarvam_processor.translate_text(answer, "english", detected_lang)
+        if detected_lang and detected_lang.lower() != "english":
+            translated_back, translate_back_ok = sarvam_processor.translate_text(
+                answer, "english", detected_lang
+            )
+            if translate_back_ok and translated_back.strip():
+                final_answer = translated_back
 
         return {
             "success": True,
             "error": None,
             "transcript": transcript,
             "detected_language": detected_lang,
-            "english_text": english_text,
-            "answer": answer,            # English version
-            "final_answer": final_answer, # Same language as input
+            "english_text": english_text,   # Used internally
+            "answer": answer,               # English version
+            "final_answer": final_answer,   # Same language as input
             "response_time": round(time.time() - total_start_time, 2)
         }
 
@@ -1829,6 +1842,7 @@ def process_voice_query_with_selected_language(audio_bytes: bytes,sarvam_process
             "final_answer": None,
             "answer": None
         }
+
 
 def display_voice_response(voice_result: dict):
     """Display voice processing results with same-language output"""
