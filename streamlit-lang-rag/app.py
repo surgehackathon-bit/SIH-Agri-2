@@ -2364,48 +2364,50 @@ if "vectors" not in st.session_state:
             # Initialize embeddings
             MODEL_PATH = Path(__file__).parent.parent / "models" / "bge-small-en-v1.5"
             @st.cache_resource(show_spinner="🔨 Loading embeddings...")
-            
             def get_embeddings():
-                return HuggingFaceEmbeddings(model_name=str(MODEL_PATH))
+                return HuggingFaceEmbeddings(
+                    model_name=str(MODEL_PATH),
+                    model_kwargs={'device': 'cpu'},
+                    encode_kwargs={'normalize_embeddings': True}
+                )
+           
             # Initialize embeddings
             embeddings=get_embeddings()
             st.session_state.embeddings=get_embeddings()
-            all_documents = []
+            @st.cache_data(show_spinner="📚 Loading documents...", ttl=3600)
+            def load_all_documents():
+                """Cached document loading"""
+                all_documents = []
+                
+                # Load soil knowledge base
+                if SOIL_KB_PATH:
+                    loader = SoilKnowledgeLoader(SOIL_KB_PATH)
+                    soil_documents = loader.load_all_documents()
+                    all_documents.extend(soil_documents)
+                
+                # Load crop cycle knowledge base
+                if CROP_CYCLE_KB_PATH:
+                    crop_loader = CropCycleKnowledgeLoader(CROP_CYCLE_KB_PATH)
+                    crop_documents = crop_loader.load_all_documents()
+                    all_documents.extend(crop_documents)
+                
+                # Load web documents (cache for 1 hour)
+                try:
+                    web_loader = WebBaseLoader(FARMER_URLS)
+                    web_documents = web_loader.load()
+                    for doc in web_documents:
+                        doc.metadata.update({
+                            "category": "farming_schemes",
+                            "type": "government_info",
+                            "data_format": "web"
+                        })
+                    all_documents.extend(web_documents)
+                except Exception as e:
+                    st.sidebar.warning(f"⚠️ Web loading issue: {e}")
+                
+                return all_documents
 
-            # 1. Load soil knowledge base if available
-            if SOIL_KB_PATH:
-                loader = SoilKnowledgeLoader(SOIL_KB_PATH)
-                soil_documents = loader.load_all_documents()
-                all_documents.extend(soil_documents)
-                st.sidebar.info(f"📊 Loaded {len(soil_documents)} soil documents")
-
-            # 2. Load crop cycle knowledge base if available
-            if CROP_CYCLE_KB_PATH:
-                crop_loader = CropCycleKnowledgeLoader(CROP_CYCLE_KB_PATH)
-                crop_documents = crop_loader.load_all_documents()
-                all_documents.extend(crop_documents)
-                st.sidebar.info(f"🌿 Loaded {len(crop_documents)} crop cycle documents")
-
-            # 3. Load web-based farming information
-            try:
-                web_loader = WebBaseLoader(FARMER_URLS)
-                web_documents = web_loader.load()
-
-                for doc in web_documents:
-                    doc.metadata.update({
-                        "category": "farming_schemes",
-                        "type": "government_info",
-                        "data_format": "web"
-                    })
-
-                all_documents.extend(web_documents)
-                st.sidebar.info(f"🌐 Loaded {len(web_documents)} web documents")
-            except Exception as e:
-                st.sidebar.warning(f"⚠️ Web loading issue: {e}")
-
-            if not all_documents:
-                st.error("No documents could be loaded!")
-                st.stop()
+            all_documents=load_all_documents()
 
             # 4. Process all documents
             text_splitter = RecursiveCharacterTextSplitter(
@@ -2416,7 +2418,18 @@ if "vectors" not in st.session_state:
             final_documents = text_splitter.split_documents(all_documents)
 
             # 5. Create vector store
-            st.session_state.vectors = FAISS.from_documents(final_documents, st.session_state.embeddings)
+            @st.cache_resource(show_spinner="🔨 Building vector store...")
+            def create_vector_store(_embeddings, documents):
+                """Cached vector store creation"""
+                text_splitter = RecursiveCharacterTextSplitter(
+                    chunk_size=800,
+                    chunk_overlap=100,
+                    separators=["\n\n", "\n", ".", " "]
+                )
+                final_documents = text_splitter.split_documents(documents)
+                
+                return FAISS.from_documents(final_documents, _embeddings), len(final_documents)
+            st.session_state.vectors,chunk_count = create_vector_store(st.session_state.embeddings,all_documents)
 
             st.sidebar.success(f"✅ Knowledge Base Ready! ({len(final_documents)} chunks)")
 
