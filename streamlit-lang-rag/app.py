@@ -1847,89 +1847,35 @@ def process_voice_query_with_selected_language(audio_bytes: bytes,sarvam_process
             "answer": None,
             "final_answer": None
         }
-
-
-
-
 def display_voice_response(voice_result: dict):
     """Display voice processing results with native language first - FIXED"""
 
-    if not voice_result['success']:
-        st.error(f"❌ {voice_result['error']}")
+    if not voice_result.get("success", False):
+        st.error(f"❌ Error: {voice_result.get('error', 'Unknown error')}")
         return
 
-    # Create a container for the response
-    response_container = st.container()
+    transcript = voice_result.get("transcript", "")
+    detected_lang = voice_result.get("detected_language", "unknown")
+    target_lang = voice_result.get("target_language", "english")
+    final_answer = voice_result.get("final_answer", "")
+    english_answer = voice_result.get("answer", "")
 
-    with response_container:
-        # Show the processing pipeline
-        st.markdown("### 🎤 Voice Query Processing")
+    # Show transcription
+    if transcript:
+        st.markdown(f"**🗣️ Transcribed ({detected_lang}):** {transcript}")
 
-        # Original transcript
-        detected_language = voice_result['language']
-        st.markdown(f"**🗣️ You said:** {voice_result['original_transcript']}")
+    # Show AI response in native language first
+    st.markdown("### 🧠 AI Response:")
+    st.markdown(final_answer)
 
-        # English translation if different (optional, in expander)
-        if voice_result['english_text'] != voice_result['original_transcript']:
-            with st.expander("🔄 View English Translation"):
-                st.markdown(f"**English:** {voice_result['english_text']}")
+    # Show English version if different
+    if final_answer and english_answer and final_answer != english_answer:
+        with st.expander("📖 View English Version"):
+            st.markdown(english_answer)
 
-        # AI Response - ALWAYS show in user's DETECTED language FIRST
-        st.markdown(f"### 🧠 AI Response:")
-        
-        # Show translated response
-        translated_response = voice_result['translated_answer']
-        
-        # Validation check - ensure we're not showing English when we should show native language
-        if detected_language != 'english':
-            if translated_response == voice_result['answer_text']:
-                st.error(f"❌ Translation failed - response is still in English")
-                st.markdown(f"**Showing English response (translation failed):**")
-                st.markdown(voice_result['answer_text'])
-            else:
-                st.success(f"✅ Response successfully translated to {detected_language}")
-                st.markdown(translated_response)
-        else:
-            st.markdown(translated_response)
-        
-        # Show English version only in expandable section (optional) if translation succeeded
-        if detected_language != 'english' and translated_response != voice_result['answer_text']:
-            with st.expander("📖 View English Version (Optional)"):
-                st.markdown(voice_result['answer_text'])
+    # Show metadata
+    st.info(f"🌍 Detected language: {detected_lang} → Responded in {target_lang}")
 
-        # Audio playback - Use DETECTED language for audio
-        if voice_result['audio_response'] and voice_result['audio_generation_success']:
-            st.markdown(f"### 🔊 Audio Response ({detected_language}):")
-            st.audio(voice_result['audio_response'], format='audio/wav')
-
-            # Download button
-            st.download_button(
-                label="📥 Download Complete Audio",
-                data=voice_result['audio_response'],
-                file_name=f"agriculture_response_{detected_language}.wav",
-                mime="audio/wav",
-                help="Download the complete generated audio response"
-            )
-        elif not voice_result['audio_generation_success']:
-            st.warning("⚠️ Audio generation failed, but text response is available above")
-
-        # Show timing information
-        col1, col2 = st.columns(2)
-        with col1:
-            st.success(f"⚡ LLM processing: {voice_result['response_time']}s")
-        with col2:
-            st.info(f"🕒 Total response: {voice_result['total_response_time']}s")
-
-        # Context sources
-        with st.expander("📚 Retrieved Knowledge Sources"):
-            for i, doc in enumerate(voice_result['context'], 1):
-                source_name = doc.metadata.get('source', f'Source {i}')
-                st.markdown(f"*{i}. {source_name}*")
-                st.markdown(f"> {doc.page_content[:300]}...")
-                st.markdown("---")
-
-    # Stop auto-scrolling after displaying everything
-    stop_autoscroll()
 def process_text_query_with_language_detection(user_input: str, sarvam_processor: SarvamVoiceProcessor, retrieval_chain) -> dict:
     """NEW FUNCTION: Process text query with language detection and native response"""
     
