@@ -1,0 +1,3942 @@
+{
+  "pests": [
+    {
+      "pestName": "Adristyrannus",
+      "commonNames": [],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Andhra Pradesh"
+      ],
+      "appearanceDescription": "Small, elongated insects with metallic sheen, dark brown to black coloration",
+      "size": "3-5mm",
+      "climaticConditions": "Warm humid conditions, 25-30°C, high humidity >70%",
+      "seasonalActivity": "Active during monsoon and post-monsoon",
+      "hostPlantsCrops": [
+        "Various crops"
+      ],
+      "damageSymptoms": [
+        "Leaf feeding damage",
+        "stunted growth"
+      ],
+      "lifeCycleDuration": "30-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Acephate",
+        "Malathion",
+        "Permethrin"
+      ]
+    },
+    {
+      "pestName": "Aleurocanthus spiniferus",
+      "commonNames": [
+        "Orange Spiny Whitefly",
+        "Citrus Blackfly"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "appearanceDescription": "Small white flying insects with waxy white coating, orange-yellow eggs on leaf undersides",
+      "size": "1-2mm",
+      "climaticConditions": "Tropical humid climate, 20-35°C, high humidity",
+      "seasonalActivity": "Year-round in tropical areas, peak in summer",
+      "hostPlantsCrops": [
+        "Citrus",
+        "mango",
+        "guava"
+      ],
+      "damageSymptoms": [
+        "Yellowing leaves",
+        "sooty mold",
+        "honeydew secretion"
+      ],
+      "lifeCycleDuration": "25-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Acetamiprid",
+        "Chlorpyrifos"
+      ]
+    },
+    {
+      "pestName": "Alfalfa plant bug",
+      "commonNames": [
+        "Alfalfa bug",
+        "Lygus bug"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Uttar Pradesh",
+        "Kerala (limited)",
+        "Tamil Nadu (occasional)"
+      ],
+      "appearanceDescription": "Green to brown oval-shaped bugs with distinctive markings, fast-moving",
+      "size": "4-6mm",
+      "climaticConditions": "Temperate to subtropical, 15-30°C, moderate humidity",
+      "seasonalActivity": "Spring to early fall, 2-3 generations",
+      "hostPlantsCrops": [
+        "Alfalfa",
+        "legumes",
+        "various crops"
+      ],
+      "damageSymptoms": [
+        "Stippling on leaves",
+        "wilting",
+        "reduced yield"
+      ],
+      "lifeCycleDuration": "30-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Lambda-cyhalothrin",
+        "Chlorpyrifos"
+      ]
+    },
+    {
+      "pestName": "Alfalfa seed chalcid",
+      "commonNames": [
+        "Seed chalcid wasp"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Rajasthan",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Tiny metallic black wasps with clear wings",
+      "size": "2-3mm",
+      "climaticConditions": "Dry to semi-arid, 20-35°C, low to moderate humidity",
+      "seasonalActivity": "Peak during seed formation period",
+      "hostPlantsCrops": [
+        "Alfalfa seeds"
+      ],
+      "damageSymptoms": [
+        "Hollow seeds",
+        "reduced germination"
+      ],
+      "lifeCycleDuration": "20-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Azadirachtin",
+        "Imidacloprid",
+        "Spinosad"
+      ]
+    },
+    {
+      "pestName": "Alfalfa weevil",
+      "commonNames": [
+        "Lucerne weevil"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Himachal Pradesh",
+        "Kerala (occasional)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Dark brown weevils with elongated snout, larvae are green with white stripe",
+      "size": "Adult: 4-5mm, Larvae: 8-10mm",
+      "climaticConditions": "Cool to moderate climate, 10-25°C, moderate humidity",
+      "seasonalActivity": "Spring emergence, 1-2 generations",
+      "hostPlantsCrops": [
+        "Alfalfa",
+        "clover"
+      ],
+      "damageSymptoms": [
+        "Skeletonized leaves",
+        "stunted growth"
+      ],
+      "lifeCycleDuration": "35-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Cyfluthrin",
+        "Carbaryl"
+      ]
+    },
+    {
+      "pestName": "Ampelophaga",
+      "commonNames": [
+        "Grapevine hawk moth"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Goa"
+      ],
+      "appearanceDescription": "Large moths with brown and pink coloration, caterpillars green with horn-like projection",
+      "size": "Wingspan: 80-120mm, Larvae: 60-80mm",
+      "climaticConditions": "Tropical to subtropical, 20-32°C, moderate to high humidity",
+      "seasonalActivity": "Active during growing season",
+      "hostPlantsCrops": [
+        "Grapevines"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "feeding on leaves and shoots"
+      ],
+      "lifeCycleDuration": "45-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Methoxyfenozide",
+        "Spinosad"
+      ]
+    },
+    {
+      "pestName": "Aphids",
+      "commonNames": [
+        "Plant lice",
+        "Greenfly",
+        "Blackfly"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Small soft-bodied insects, green, black, brown, or red colored, clustered on shoots",
+      "size": "1-4mm",
+      "climaticConditions": "Wide temperature range, 15-30°C, moderate to high humidity",
+      "seasonalActivity": "Year-round, peak in cooler months",
+      "hostPlantsCrops": [
+        "Almost all crops"
+      ],
+      "damageSymptoms": [
+        "Curled leaves",
+        "stunted growth",
+        "honeydew",
+        "virus transmission"
+      ],
+      "lifeCycleDuration": "10-20 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Acetamiprid",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Aphis citricola Vander Goot",
+      "commonNames": [
+        "Spiraea aphid",
+        "Citrus aphid"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "appearanceDescription": "Small green aphids with long antennae, often in dense colonies",
+      "size": "1-3mm",
+      "climaticConditions": "Subtropical to tropical, 18-28°C, moderate humidity",
+      "seasonalActivity": "Peak in winter and spring",
+      "hostPlantsCrops": [
+        "Citrus",
+        "spiraea",
+        "various fruits"
+      ],
+      "damageSymptoms": [
+        "Leaf curling",
+        "yellowing",
+        "sooty mold"
+      ],
+      "lifeCycleDuration": "12-18 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiacloprid",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Apolygus lucorum",
+      "commonNames": [
+        "Green mirid bug"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Gujarat",
+        "Kerala (occasional)",
+        "Tamil Nadu (occasional)"
+      ],
+      "appearanceDescription": "Green oval bugs that change color from green to brown, very active",
+      "size": "6-8mm",
+      "climaticConditions": "Temperate to subtropical, 20-30°C, moderate humidity",
+      "seasonalActivity": "2-3 generations per year",
+      "hostPlantsCrops": [
+        "Cotton",
+        "various crops"
+      ],
+      "damageSymptoms": [
+        "Puncture wounds",
+        "wilting",
+        "flower drop"
+      ],
+      "lifeCycleDuration": "25-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Lambda-cyhalothrin",
+        "Chlorpyrifos",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Army worm",
+      "commonNames": [
+        "Armyworm caterpillar"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Gray-brown caterpillars with distinctive stripes, move in groups",
+      "size": "25-40mm",
+      "climaticConditions": "Wide range, 20-35°C, triggered by rains",
+      "seasonalActivity": "Outbreak after rains, 2-3 generations",
+      "hostPlantsCrops": [
+        "Cereals",
+        "grasses",
+        "various crops"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "cut stems at ground level"
+      ],
+      "lifeCycleDuration": "30-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Lambda-cyhalothrin",
+        "Bifenthrin"
+      ]
+    },
+    {
+      "pestName": "Asiatic rice borer",
+      "commonNames": [
+        "Yellow stem borer"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Yellow-brown moths, larvae yellowish with dark spots",
+      "size": "Larvae: 20-25mm",
+      "climaticConditions": "Tropical humid, 25-35°C, high humidity >80%",
+      "seasonalActivity": "Coincides with rice growing season",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Dead hearts",
+        "white ears",
+        "stem boring"
+      ],
+      "lifeCycleDuration": "35-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Emamectin benzoate",
+        "Fipronil",
+        "Chlorantraniliprole"
+      ]
+    },
+    {
+      "pestName": "Bactrocera tsuneonis",
+      "commonNames": [
+        "Asian fruit fly"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "Small flies with transparent wings and yellow-brown body",
+      "size": "6-8mm",
+      "climaticConditions": "Tropical to subtropical, 22-30°C, high humidity",
+      "seasonalActivity": "Year-round, peak in fruit season",
+      "hostPlantsCrops": [
+        "Various fruits"
+      ],
+      "damageSymptoms": [
+        "Fruit rot",
+        "maggot infestation"
+      ],
+      "lifeCycleDuration": "20-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Spinosad",
+        "Malathion",
+        "Dimethoate"
+      ]
+    },
+    {
+      "pestName": "Beet army worm",
+      "commonNames": [
+        "Beet armyworm"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Dark caterpillars with light stripes along body",
+      "size": "30-35mm",
+      "climaticConditions": "Warm climate, 25-35°C, moderate humidity",
+      "seasonalActivity": "Multiple generations, triggered by rains",
+      "hostPlantsCrops": [
+        "Beet",
+        "various vegetables"
+      ],
+      "damageSymptoms": [
+        "Leaf feeding",
+        "defoliation"
+      ],
+      "lifeCycleDuration": "28-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Methoxyfenozide",
+        "Spinosad"
+      ]
+    },
+    {
+      "pestName": "Beet fly",
+      "commonNames": [
+        "Beet leaf miner"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Uttar Pradesh",
+        "Kerala (rare)",
+        "Tamil Nadu (occasional)"
+      ],
+      "appearanceDescription": "Small dark flies, larvae create mines in leaves",
+      "size": "Adult: 3-4mm",
+      "climaticConditions": "Temperate, 15-25°C, moderate humidity",
+      "seasonalActivity": "Spring to fall, multiple generations",
+      "hostPlantsCrops": [
+        "Sugar beet",
+        "spinach"
+      ],
+      "damageSymptoms": [
+        "Leaf mines",
+        "reduced photosynthesis"
+      ],
+      "lifeCycleDuration": "25-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Methomyl",
+        "Dimethoate"
+      ]
+    },
+    {
+      "pestName": "Beet spot flies",
+      "commonNames": [
+        "Beet leaf spot fly"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Uttar Pradesh",
+        "Kerala (rare)",
+        "Tamil Nadu (occasional)"
+      ],
+      "appearanceDescription": "Small flies causing circular leaf spots",
+      "size": "2-3mm",
+      "climaticConditions": "Cool to moderate, 10-25°C",
+      "seasonalActivity": "Spring and fall active periods",
+      "hostPlantsCrops": [
+        "Sugar beet",
+        "related crops"
+      ],
+      "damageSymptoms": [
+        "Circular spots on leaves"
+      ],
+      "lifeCycleDuration": "20-25 days",
+      "mostCommonlyUsedPesticides": [
+        "Dimethoate",
+        "Chlorpyrifos",
+        "Carbaryl"
+      ]
+    },
+    {
+      "pestName": "Beet weevil",
+      "commonNames": [
+        "Sugar beet weevil"
+      ],
+      "statesRegions": [
+        "Northern plains",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Dark brown weevils with prominent snout",
+      "size": "8-12mm",
+      "climaticConditions": "Temperate to subtropical, 15-30°C",
+      "seasonalActivity": "Spring emergence, one generation",
+      "hostPlantsCrops": [
+        "Sugar beet"
+      ],
+      "damageSymptoms": [
+        "Root feeding",
+        "stunted growth"
+      ],
+      "lifeCycleDuration": "45-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Carbaryl",
+        "Diazinon"
+      ]
+    },
+    {
+      "pestName": "Beetle",
+      "commonNames": [
+        "Various beetles"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Varies by species, hard wing covers (elytra), diverse colors",
+      "size": "Varies 2-50mm",
+      "climaticConditions": "Species dependent, wide range",
+      "seasonalActivity": "Species dependent",
+      "hostPlantsCrops": [
+        "Wide host range"
+      ],
+      "damageSymptoms": [
+        "Leaf feeding",
+        "root damage",
+        "varies by species"
+      ],
+      "lifeCycleDuration": "Varies 30-365 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Carbaryl",
+        "Malathion",
+        "Cypermethrin"
+      ]
+    },
+    {
+      "pestName": "Bird cherry-oat aphid",
+      "commonNames": [
+        "Oat aphid"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Uttar Pradesh",
+        "Kerala (occasional)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Small green to brown aphids with long legs",
+      "size": "2-3mm",
+      "climaticConditions": "Cool to moderate, 12-25°C",
+      "seasonalActivity": "Peak in spring and fall",
+      "hostPlantsCrops": [
+        "Cereals",
+        "cherry"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunted growth",
+        "virus transmission"
+      ],
+      "lifeCycleDuration": "15-20 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiamethoxam",
+        "Dinotefuran",
+        "Acetamiprid"
+      ]
+    },
+    {
+      "pestName": "Black cutworm",
+      "commonNames": [
+        "Black armyworm"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Dark gray to black caterpillars that curl when disturbed",
+      "size": "30-45mm",
+      "climaticConditions": "Cool to warm, 15-30°C, active at night",
+      "seasonalActivity": "Early season pest, 2-3 generations",
+      "hostPlantsCrops": [
+        "Various crops",
+        "vegetables"
+      ],
+      "damageSymptoms": [
+        "Cut seedlings at soil level"
+      ],
+      "lifeCycleDuration": "35-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorantraniliprole",
+        "Flubendiamide",
+        "Emamectin benzoate"
+      ]
+    },
+    {
+      "pestName": "Black hairy",
+      "commonNames": [
+        "Black hairy caterpillar"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Black caterpillars covered in dense hairs",
+      "size": "25-40mm",
+      "climaticConditions": "Tropical to subtropical, 20-35°C",
+      "seasonalActivity": "Monsoon and post-monsoon",
+      "hostPlantsCrops": [
+        "Various crops"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "skin irritation from hairs"
+      ],
+      "lifeCycleDuration": "30-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Malathion",
+        "Permethrin",
+        "Cyfluthrin"
+      ]
+    },
+    {
+      "pestName": "Blister beetle",
+      "commonNames": [
+        "Oil beetle"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Elongated beetles, often brightly colored, soft bodies",
+      "size": "8-20mm",
+      "climaticConditions": "Warm climate, 20-35°C",
+      "seasonalActivity": "Active in warm months",
+      "hostPlantsCrops": [
+        "Various crops",
+        "flowers"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "can cause blisters on skin"
+      ],
+      "lifeCycleDuration": "40-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Malathion",
+        "Pyrethrin",
+        "Permethrin"
+      ]
+    },
+    {
+      "pestName": "Bollworm",
+      "commonNames": [
+        "Cotton bollworm",
+        "Corn earworm"
+      ],
+      "statesRegions": [
+        "All cotton-growing states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Caterpillars varying from green to brown with stripes",
+      "size": "25-40mm",
+      "climaticConditions": "Warm climate, 25-35°C, moderate humidity",
+      "seasonalActivity": "Multiple generations during crop season",
+      "hostPlantsCrops": [
+        "Cotton",
+        "corn",
+        "tomato"
+      ],
+      "damageSymptoms": [
+        "Boll damage",
+        "fruit boring"
+      ],
+      "lifeCycleDuration": "30-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorantraniliprole",
+        "Emamectin benzoate",
+        "Spinosad",
+        "Indoxacarb"
+      ]
+    },
+    {
+      "pestName": "Brevipoalpus lewisi McGregor",
+      "commonNames": [
+        "False spider mite"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "appearanceDescription": "Tiny reddish-orange mites with flattened body",
+      "size": "0.2-0.3mm",
+      "climaticConditions": "Warm humid climate, 25-35°C, high humidity",
+      "seasonalActivity": "Year-round, peak in dry periods",
+      "hostPlantsCrops": [
+        "Citrus",
+        "ornamentals"
+      ],
+      "damageSymptoms": [
+        "Chlorotic spots",
+        "leaf bronzing",
+        "fruit scarring"
+      ],
+      "lifeCycleDuration": "15-25 days",
+      "mostCommonlyUsedPesticides": [
+        "Abamectin",
+        "Bifenazate",
+        "Fenpyroximate",
+        "Spiromesifen"
+      ]
+    },
+    {
+      "pestName": "Brown plant hopper",
+      "commonNames": [
+        "BPH",
+        "Rice brown planthopper"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Small brown hopping insects with wings folded tent-like",
+      "size": "3-5mm",
+      "climaticConditions": "Tropical humid, 25-32°C, high humidity >75%",
+      "seasonalActivity": "Peak during rice growing season",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Yellowing from base",
+        "hopperburn",
+        "virus transmission"
+      ],
+      "lifeCycleDuration": "25-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Chlorpyrifos",
+        "Buprofezin",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Cabbage army worm",
+      "commonNames": [
+        "Cabbage looper"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Green caterpillars with white stripes, arch their back while moving",
+      "size": "25-35mm",
+      "climaticConditions": "Cool to moderate, 15-28°C",
+      "seasonalActivity": "Multiple generations year-round",
+      "hostPlantsCrops": [
+        "Cabbage",
+        "cruciferous crops"
+      ],
+      "damageSymptoms": [
+        "Large holes in leaves",
+        "head damage"
+      ],
+      "lifeCycleDuration": "25-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Spinosad",
+        "Methomyl",
+        "Chlorantraniliprole"
+      ]
+    },
+    {
+      "pestName": "Cerodonta denticornis",
+      "commonNames": [
+        "Leaf miner fly"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Andhra Pradesh"
+      ],
+      "appearanceDescription": "Small dark flies, larvae create serpentine mines",
+      "size": "Adult: 2-3mm",
+      "climaticConditions": "Warm humid, 22-30°C, moderate to high humidity",
+      "seasonalActivity": "Active during growing season",
+      "hostPlantsCrops": [
+        "Various leafy crops"
+      ],
+      "damageSymptoms": [
+        "Serpentine leaf mines",
+        "reduced photosynthesis"
+      ],
+      "lifeCycleDuration": "20-25 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiacloprid",
+        "Thiamethoxam",
+        "Dinotefuran"
+      ]
+    },
+    {
+      "pestName": "Ceroplastes rubens",
+      "commonNames": [
+        "Red wax scale"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "Reddish-brown scale insects covered with waxy secretion",
+      "size": "3-5mm",
+      "climaticConditions": "Tropical to subtropical, 20-32°C, moderate humidity",
+      "seasonalActivity": "Year-round activity",
+      "hostPlantsCrops": [
+        "Citrus",
+        "ornamentals"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "sooty mold"
+      ],
+      "lifeCycleDuration": "45-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Acetamiprid",
+        "Buprofezin",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Chlumetia transversa",
+      "commonNames": [],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Andhra Pradesh"
+      ],
+      "appearanceDescription": "Small insects with transverse markings",
+      "size": "4-6mm",
+      "climaticConditions": "Tropical climate, 24-32°C, high humidity",
+      "seasonalActivity": "Active during warm months",
+      "hostPlantsCrops": [
+        "Various crops"
+      ],
+      "damageSymptoms": [
+        "Leaf damage",
+        "reduced vigor"
+      ],
+      "lifeCycleDuration": "30-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Chlorpyrifos",
+        "Cypermethrin",
+        "Acetamiprid"
+      ]
+    },
+    {
+      "pestName": "Chrysomphalus aonidum",
+      "commonNames": [
+        "Florida red scale"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "appearanceDescription": "Circular reddish-brown scale insects on plant parts",
+      "size": "1-2mm diameter",
+      "climaticConditions": "Warm climate, 22-35°C, moderate humidity",
+      "seasonalActivity": "Year-round in tropical areas",
+      "hostPlantsCrops": [
+        "Citrus",
+        "ornamentals"
+      ],
+      "damageSymptoms": [
+        "Yellow spots",
+        "leaf drop",
+        "branch dieback"
+      ],
+      "lifeCycleDuration": "40-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Abamectin",
+        "Acetamiprid",
+        "Buprofezin"
+      ]
+    },
+    {
+      "pestName": "Cicadella viridis",
+      "commonNames": [
+        "Green leafhopper"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Bright green wedge-shaped insects that jump when disturbed",
+      "size": "8-10mm",
+      "climaticConditions": "Temperate to tropical, 18-30°C, moderate humidity",
+      "seasonalActivity": "Spring to fall, multiple generations",
+      "hostPlantsCrops": [
+        "Grasses",
+        "cereals",
+        "ornamentals"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "virus transmission"
+      ],
+      "lifeCycleDuration": "30-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiacloprid",
+        "Dinotefuran",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Cicadellidae",
+      "commonNames": [
+        "Leafhoppers"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Wedge-shaped insects, various colors, excellent jumpers",
+      "size": "3-15mm",
+      "climaticConditions": "Wide range, 15-35°C, various humidity levels",
+      "seasonalActivity": "Multiple generations per year",
+      "hostPlantsCrops": [
+        "Wide range of plants"
+      ],
+      "damageSymptoms": [
+        "Stippling",
+        "yellowing",
+        "virus transmission"
+      ],
+      "lifeCycleDuration": "25-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiacloprid",
+        "Dinotefuran",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Colomerus vitis",
+      "commonNames": [
+        "Grape erineum mite"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Himachal Pradesh"
+      ],
+      "appearanceDescription": "Microscopic mites causing felt-like growth on leaves",
+      "size": "0.15mm",
+      "climaticConditions": "Temperate to subtropical, 15-30°C",
+      "seasonalActivity": "Spring to fall activity",
+      "hostPlantsCrops": [
+        "Grapes"
+      ],
+      "damageSymptoms": [
+        "Erineum formation",
+        "leaf distortion"
+      ],
+      "lifeCycleDuration": "15-20 days",
+      "mostCommonlyUsedPesticides": [
+        "Bifenazate",
+        "Fenpyroximate",
+        "Abamectin",
+        "Hexythiazox"
+      ]
+    },
+    {
+      "pestName": "Corn borer",
+      "commonNames": [
+        "European corn borer",
+        "Asian corn borer"
+      ],
+      "statesRegions": [
+        "All corn-growing states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Caterpillars with distinct head capsule, cream to pink colored",
+      "size": "20-25mm",
+      "climaticConditions": "Warm climate, 20-30°C, moderate humidity",
+      "seasonalActivity": "1-3 generations depending on region",
+      "hostPlantsCrops": [
+        "Corn",
+        "sorghum",
+        "millet"
+      ],
+      "damageSymptoms": [
+        "Stem boring",
+        "broken stalks",
+        "reduced yield"
+      ],
+      "lifeCycleDuration": "35-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Emamectin benzoate",
+        "Lambda-cyhalothrin",
+        "Spinosad"
+      ]
+    },
+    {
+      "pestName": "Corn earworm",
+      "commonNames": [
+        "Cotton bollworm",
+        "Tomato fruitworm"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Variable colored caterpillars from green to brown with stripes",
+      "size": "25-40mm",
+      "climaticConditions": "Warm climate, 22-35°C, moderate humidity",
+      "seasonalActivity": "Multiple generations throughout season",
+      "hostPlantsCrops": [
+        "Corn",
+        "cotton",
+        "tomato",
+        "many crops"
+      ],
+      "damageSymptoms": [
+        "Fruit/ear damage",
+        "boring holes"
+      ],
+      "lifeCycleDuration": "30-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Carbaryl",
+        "Cypermethrin"
+      ]
+    },
+    {
+      "pestName": "Cutworm",
+      "commonNames": [
+        "Black cutworm",
+        "Variegated cutworm"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Smooth caterpillars that curl up when disturbed",
+      "size": "30-50mm",
+      "climaticConditions": "Cool to warm, 12-28°C, active at night",
+      "seasonalActivity": "Early season, 2-3 generations",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Cut plants at soil level",
+        "root feeding"
+      ],
+      "lifeCycleDuration": "40-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Diazinon",
+        "Methomyl"
+      ]
+    },
+    {
+      "pestName": "Dacus dorsalis (Hendel)",
+      "commonNames": [
+        "Oriental fruit fly"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Northeast states"
+      ],
+      "appearanceDescription": "Yellow-brown flies with distinctive wing markings",
+      "size": "6-8mm",
+      "climaticConditions": "Tropical humid, 20-30°C, high humidity",
+      "seasonalActivity": "Year-round, peak in fruit season",
+      "hostPlantsCrops": [
+        "Mango",
+        "guava",
+        "citrus",
+        "various fruits"
+      ],
+      "damageSymptoms": [
+        "Fruit rot",
+        "maggot tunnels"
+      ],
+      "lifeCycleDuration": "16-25 days",
+      "mostCommonlyUsedPesticides": [
+        "Malathion",
+        "Diazinon",
+        "Fenthion"
+      ]
+    },
+    {
+      "pestName": "Dasineura sp",
+      "commonNames": [
+        "Gall midge"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Tiny flies, larvae cause gall formation",
+      "size": "Adult: 1-3mm",
+      "climaticConditions": "Various climates depending on species",
+      "seasonalActivity": "Usually one generation per season",
+      "hostPlantsCrops": [
+        "Species specific hosts"
+      ],
+      "damageSymptoms": [
+        "Gall formation",
+        "distorted growth"
+      ],
+      "lifeCycleDuration": "20-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Acephate",
+        "Chlorpyrifos"
+      ]
+    },
+    {
+      "pestName": "Deporaus marginatus Pascoe",
+      "commonNames": [
+        "Leaf rolling weevil"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Northeast states"
+      ],
+      "appearanceDescription": "Small dark weevils that roll leaves",
+      "size": "4-6mm",
+      "climaticConditions": "Subtropical to tropical, 20-32°C",
+      "seasonalActivity": "Active during growing season",
+      "hostPlantsCrops": [
+        "Various trees and shrubs"
+      ],
+      "damageSymptoms": [
+        "Rolled leaves",
+        "reduced photosynthesis"
+      ],
+      "lifeCycleDuration": "40-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Chlorpyrifos",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "English grain aphid",
+      "commonNames": [
+        "Grain aphid"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Uttar Pradesh",
+        "Kerala (occasional)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Green aphids with long cornicles",
+      "size": "2-3mm",
+      "climaticConditions": "Cool to moderate, 10-25°C",
+      "seasonalActivity": "Peak during grain filling stage",
+      "hostPlantsCrops": [
+        "Wheat",
+        "barley",
+        "oats"
+      ],
+      "damageSymptoms": [
+        "Honeydew",
+        "reduced grain quality"
+      ],
+      "lifeCycleDuration": "12-15 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Lambda-cyhalothrin",
+        "Pyrethroids"
+      ]
+    },
+    {
+      "pestName": "Erythroneura apicalis",
+      "commonNames": [
+        "Grape leafhopper"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Punjab"
+      ],
+      "appearanceDescription": "Small pale yellow leafhoppers with distinctive markings",
+      "size": "3-4mm",
+      "climaticConditions": "Temperate to subtropical, 18-32°C",
+      "seasonalActivity": "2-3 generations per year",
+      "hostPlantsCrops": [
+        "Grapes"
+      ],
+      "damageSymptoms": [
+        "Stippling",
+        "leaf yellowing",
+        "reduced photosynthesis"
+      ],
+      "lifeCycleDuration": "25-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Diazinon",
+        "Malathion"
+      ]
+    },
+    {
+      "pestName": "Fall armyworm",
+      "commonNames": [
+        "African armyworm"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Gray-brown caterpillars with distinctive inverted Y marking on head",
+      "size": "30-45mm",
+      "climaticConditions": "Warm humid, 20-35°C, triggered by rains",
+      "seasonalActivity": "Multiple generations, peak after rains",
+      "hostPlantsCrops": [
+        "Corn",
+        "rice",
+        "sugarcane",
+        "many crops"
+      ],
+      "damageSymptoms": [
+        "Whorl damage",
+        "defoliation",
+        "economic loss"
+      ],
+      "lifeCycleDuration": "28-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Chlorantraniliprole",
+        "Spinosad"
+      ]
+    },
+    {
+      "pestName": "Field Cricket",
+      "commonNames": [
+        "House cricket"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Brown to black crickets with long antennae",
+      "size": "12-25mm",
+      "climaticConditions": "Warm climate, 20-35°C, moderate humidity",
+      "seasonalActivity": "Active at night, multiple generations",
+      "hostPlantsCrops": [
+        "Various crops",
+        "seedlings"
+      ],
+      "damageSymptoms": [
+        "Root damage",
+        "seedling cutting"
+      ],
+      "lifeCycleDuration": "60-90 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Permethrin",
+        "Cyfluthrin"
+      ]
+    },
+    {
+      "pestName": "Flax budworm",
+      "commonNames": [
+        "Linseed budworm"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Madhya Pradesh",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Small caterpillars feeding on buds and flowers",
+      "size": "12-18mm",
+      "climaticConditions": "Temperate to subtropical, 18-28°C",
+      "seasonalActivity": "During flowering period",
+      "hostPlantsCrops": [
+        "Flax",
+        "linseed"
+      ],
+      "damageSymptoms": [
+        "Bud damage",
+        "reduced seed production"
+      ],
+      "lifeCycleDuration": "25-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Methomyl",
+        "Pyrethroids"
+      ]
+    },
+    {
+      "pestName": "Flea beetle",
+      "commonNames": [
+        "Various flea beetle species"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Small jumping beetles, often metallic colored",
+      "size": "2-6mm",
+      "climaticConditions": "Wide range, 15-35°C",
+      "seasonalActivity": "Spring to fall activity",
+      "hostPlantsCrops": [
+        "Crucifers",
+        "potatoes",
+        "many crops"
+      ],
+      "damageSymptoms": [
+        "Shot holes in leaves",
+        "defoliation"
+      ],
+      "lifeCycleDuration": "30-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiamethoxam",
+        "Pyrethroids"
+      ]
+    },
+    {
+      "pestName": "Fruit piercing moth",
+      "commonNames": [
+        "Orange fruit piercing moth"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Northeast"
+      ],
+      "appearanceDescription": "Large moths with distinctive wing patterns",
+      "size": "Wingspan: 60-80mm",
+      "climaticConditions": "Tropical to subtropical, 20-32°C",
+      "seasonalActivity": "Active during fruit season",
+      "hostPlantsCrops": [
+        "Citrus",
+        "mango",
+        "banana",
+        "various fruits"
+      ],
+      "damageSymptoms": [
+        "Punctured fruits",
+        "secondary infections"
+      ],
+      "lifeCycleDuration": "45-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Malathion",
+        "Pyrethroids"
+      ]
+    },
+    {
+      "pestName": "Gall fly",
+      "commonNames": [
+        "Various gall fly species"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Small flies causing gall formation on plants",
+      "size": "2-5mm",
+      "climaticConditions": "Species dependent, 18-30°C",
+      "seasonalActivity": "Usually synchronized with host phenology",
+      "hostPlantsCrops": [
+        "Species specific"
+      ],
+      "damageSymptoms": [
+        "Gall formation",
+        "distorted plant parts"
+      ],
+      "lifeCycleDuration": "20-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Malathion",
+        "Methomyl"
+      ]
+    },
+    {
+      "pestName": "Grain spreader thrips",
+      "commonNames": [
+        "Grain thrips"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Uttar Pradesh",
+        "Kerala (occasional)",
+        "Tamil Nadu (occasional)"
+      ],
+      "appearanceDescription": "Tiny elongated insects, yellowish to brown",
+      "size": "1-2mm",
+      "climaticConditions": "Warm dry conditions, 25-35°C, low humidity",
+      "seasonalActivity": "Peak during grain maturity",
+      "hostPlantsCrops": [
+        "Cereals",
+        "grasses"
+      ],
+      "damageSymptoms": [
+        "Silver streaks on leaves",
+        "reduced grain quality"
+      ],
+      "lifeCycleDuration": "20-25 days",
+      "mostCommonlyUsedPesticides": [
+        "Acephate",
+        "Imidacloprid",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Grasshopper",
+      "commonNames": [
+        "Various grasshopper species"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Large jumping insects with powerful hind legs",
+      "size": "15-50mm",
+      "climaticConditions": "Warm dry conditions, 25-40°C",
+      "seasonalActivity": "Active during warm months",
+      "hostPlantsCrops": [
+        "Wide range of crops and grasses"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "complete plant consumption"
+      ],
+      "lifeCycleDuration": "45-90 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Malathion",
+        "Pyrethroids"
+      ]
+    },
+    {
+      "pestName": "Green bug",
+      "commonNames": [
+        "Greenbug aphid"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Rajasthan",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Green aphids with dark stripe down back",
+      "size": "1-2mm",
+      "climaticConditions": "Cool to moderate, 15-25°C",
+      "seasonalActivity": "Peak in cooler months",
+      "hostPlantsCrops": [
+        "Sorghum",
+        "wheat",
+        "barley"
+      ],
+      "damageSymptoms": [
+        "Red spotting on leaves",
+        "plant death"
+      ],
+      "lifeCycleDuration": "10-15 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Malathion",
+        "Pyrethroids"
+      ]
+    },
+    {
+      "pestName": "Grub",
+      "commonNames": [
+        "White grub",
+        "Chafer beetle larvae"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "C-shaped white larvae with brown head",
+      "size": "15-40mm",
+      "climaticConditions": "Soil dwelling, 20-30°C, moist conditions",
+      "seasonalActivity": "Active during monsoon, underground",
+      "hostPlantsCrops": [
+        "Roots of various crops"
+      ],
+      "damageSymptoms": [
+        "Root damage",
+        "plant wilting",
+        "death"
+      ],
+      "lifeCycleDuration": "300-400 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Imidacloprid",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Icerya purchasi Maskell",
+      "commonNames": [
+        "Cottony cushion scale"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "White cottony insects on plant stems and leaves",
+      "size": "5-8mm",
+      "climaticConditions": "Subtropical to tropical, 20-30°C",
+      "seasonalActivity": "Year-round activity",
+      "hostPlantsCrops": [
+        "Citrus",
+        "ornamentals"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "sooty mold"
+      ],
+      "lifeCycleDuration": "60-80 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Dinotefuran",
+        "Acetamiprid"
+      ]
+    },
+    {
+      "pestName": "Indigo caterpillar",
+      "commonNames": [
+        "Indigo butterfly larva"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Andhra Pradesh"
+      ],
+      "appearanceDescription": "Blue-green caterpillars with spines",
+      "size": "20-30mm",
+      "climaticConditions": "Tropical climate, 22-32°C, moderate humidity",
+      "seasonalActivity": "Multiple generations per year",
+      "hostPlantsCrops": [
+        "Indigo",
+        "legumes"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "reduced plant vigor"
+      ],
+      "lifeCycleDuration": "25-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Imidacloprid",
+        "Acephate"
+      ]
+    },
+    {
+      "pestName": "Jute aphid",
+      "commonNames": [
+        "Jute plant louse"
+      ],
+      "statesRegions": [
+        "West Bengal",
+        "Assam",
+        "Odisha",
+        "Kerala (occasional)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Small green to brown aphids in colonies",
+      "size": "1-2mm",
+      "climaticConditions": "Humid subtropical, 25-32°C, high humidity",
+      "seasonalActivity": "Peak during jute growing season",
+      "hostPlantsCrops": [
+        "Jute",
+        "corchorus"
+      ],
+      "damageSymptoms": [
+        "Curled leaves",
+        "stunted growth",
+        "honeydew"
+      ],
+      "lifeCycleDuration": "12-18 days",
+      "mostCommonlyUsedPesticides": [
+        "Thiamethoxam",
+        "Imidacloprid",
+        "Clothianidin"
+      ]
+    },
+    {
+      "pestName": "Jute hairy",
+      "commonNames": [
+        "Jute hairy caterpillar"
+      ],
+      "statesRegions": [
+        "West Bengal",
+        "Assam",
+        "Odisha",
+        "Kerala (occasional)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Hairy caterpillars with dense setae",
+      "size": "25-35mm",
+      "climaticConditions": "Humid climate, 25-30°C, high humidity",
+      "seasonalActivity": "During jute growing season",
+      "hostPlantsCrops": [
+        "Jute",
+        "hibiscus"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "skeletonized leaves"
+      ],
+      "lifeCycleDuration": "30-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Chlorpyrifos",
+        "Lambda-cyhalothrin"
+      ]
+    },
+    {
+      "pestName": "Jute red mite",
+      "commonNames": [
+        "Jute spider mite"
+      ],
+      "statesRegions": [
+        "West Bengal",
+        "Assam",
+        "Odisha",
+        "Kerala (occasional)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Tiny reddish mites on leaf undersides",
+      "size": "0.3-0.5mm",
+      "climaticConditions": "Hot dry conditions, 30-40°C, low humidity",
+      "seasonalActivity": "Peak in summer months",
+      "hostPlantsCrops": [
+        "Jute"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "bronzing",
+        "webbing on leaves"
+      ],
+      "lifeCycleDuration": "15-20 days",
+      "mostCommonlyUsedPesticides": [
+        "Bifenthrin",
+        "Spiromesifen",
+        "Fenpropathrin"
+      ]
+    },
+    {
+      "pestName": "Jute semilooper",
+      "commonNames": [
+        "Jute looper caterpillar"
+      ],
+      "statesRegions": [
+        "West Bengal",
+        "Assam",
+        "Odisha",
+        "Kerala (occasional)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Green caterpillars that arch their back while walking",
+      "size": "20-30mm",
+      "climaticConditions": "Warm humid, 25-32°C, high humidity",
+      "seasonalActivity": "Multiple generations during crop season",
+      "hostPlantsCrops": [
+        "Jute",
+        "okra",
+        "cotton"
+      ],
+      "damageSymptoms": [
+        "Large irregular holes in leaves"
+      ],
+      "lifeCycleDuration": "25-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Emamectin benzoate",
+        "Indoxacarb"
+      ]
+    },
+    {
+      "pestName": "Jute stem girdler",
+      "commonNames": [
+        "Jute stem borer"
+      ],
+      "statesRegions": [
+        "West Bengal",
+        "Assam",
+        "Odisha",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Larvae bore into jute stems",
+      "size": "15-20mm",
+      "climaticConditions": "Humid climate, 25-30°C",
+      "seasonalActivity": "During stem formation stage",
+      "hostPlantsCrops": [
+        "Jute"
+      ],
+      "damageSymptoms": [
+        "Stem girdling",
+        "plant lodging",
+        "death"
+      ],
+      "lifeCycleDuration": "35-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Carbofuran",
+        "Phorate"
+      ]
+    },
+    {
+      "pestName": "Jute Stem Weevil",
+      "commonNames": [
+        "Apion weevil"
+      ],
+      "statesRegions": [
+        "West Bengal",
+        "Assam",
+        "Odisha",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Small dark weevils with elongated snout",
+      "size": "3-4mm",
+      "climaticConditions": "Humid subtropical, 24-30°C",
+      "seasonalActivity": "Active during stem elongation",
+      "hostPlantsCrops": [
+        "Jute stems"
+      ],
+      "damageSymptoms": [
+        "Stem punctures",
+        "weakening",
+        "lodging"
+      ],
+      "lifeCycleDuration": "40-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Chlorpyrifos",
+        "Lambda-cyhalothrin"
+      ]
+    },
+    {
+      "pestName": "Jute stick insect",
+      "commonNames": [
+        "Walking stick"
+      ],
+      "statesRegions": [
+        "West Bengal",
+        "Assam",
+        "Odisha",
+        "Kerala (occasional)",
+        "Tamil Nadu (occasional)"
+      ],
+      "appearanceDescription": "Long thin insects resembling twigs",
+      "size": "60-100mm",
+      "climaticConditions": "Humid climate, 22-28°C, high humidity",
+      "seasonalActivity": "Active during growing season",
+      "hostPlantsCrops": [
+        "Jute",
+        "other plants"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "twig-like camouflage"
+      ],
+      "lifeCycleDuration": "90-120 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiamethoxam",
+        "Chlorpyrifos"
+      ]
+    },
+    {
+      "pestName": "Large cutworm",
+      "commonNames": [
+        "Granulate cutworm"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Large gray-brown caterpillars with granulate texture",
+      "size": "40-50mm",
+      "climaticConditions": "Cool to warm, 15-30°C, active at night",
+      "seasonalActivity": "Early season pest",
+      "hostPlantsCrops": [
+        "Various crops"
+      ],
+      "damageSymptoms": [
+        "Cut large plants",
+        "root feeding"
+      ],
+      "lifeCycleDuration": "45-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Chlorpyrifos",
+        "Lambda-cyhalothrin"
+      ]
+    },
+    {
+      "pestName": "Lawana imitata Melichar",
+      "commonNames": [
+        "Planthopper"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Andhra Pradesh"
+      ],
+      "appearanceDescription": "Small brown hopping insects",
+      "size": "4-6mm",
+      "climaticConditions": "Tropical climate, 24-32°C, moderate humidity",
+      "seasonalActivity": "Active during crop season",
+      "hostPlantsCrops": [
+        "Various crops"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "honeydew secretion"
+      ],
+      "lifeCycleDuration": "30-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Buprofezin",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Leaf beetle",
+      "commonNames": [
+        "Various leaf beetle species"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Oval beetles feeding on leaves, various colors",
+      "size": "5-12mm",
+      "climaticConditions": "Wide range, 18-35°C",
+      "seasonalActivity": "Multiple generations per year",
+      "hostPlantsCrops": [
+        "Wide range of hosts"
+      ],
+      "damageSymptoms": [
+        "Holes in leaves",
+        "skeletonization"
+      ],
+      "lifeCycleDuration": "30-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Imidacloprid",
+        "Acephate"
+      ]
+    },
+    {
+      "pestName": "Legume blister beetle",
+      "commonNames": [
+        "Epicauta beetle"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Elongated beetles, often gray or black",
+      "size": "10-20mm",
+      "climaticConditions": "Warm climate, 25-35°C",
+      "seasonalActivity": "Active in warm months",
+      "hostPlantsCrops": [
+        "Legumes",
+        "various crops"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "flower feeding"
+      ],
+      "lifeCycleDuration": "45-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Chlorpyrifos",
+        "Lambda-cyhalothrin"
+      ]
+    },
+    {
+      "pestName": "Limacodidae",
+      "commonNames": [
+        "Slug caterpillar"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Slug-like caterpillars with stinging hairs",
+      "size": "15-25mm",
+      "climaticConditions": "Tropical to subtropical, 22-32°C",
+      "seasonalActivity": "Multiple generations",
+      "hostPlantsCrops": [
+        "Various trees and crops"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "stinging sensation"
+      ],
+      "lifeCycleDuration": "35-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Chlorpyrifos",
+        "Carbaryl"
+      ]
+    },
+    {
+      "pestName": "Locust",
+      "commonNames": [
+        "Desert locust",
+        "Migratory locust"
+      ],
+      "statesRegions": [
+        "Rajasthan",
+        "Gujarat",
+        "Maharashtra",
+        "Kerala (occasional)",
+        "Tamil Nadu (occasional)"
+      ],
+      "appearanceDescription": "Large grasshoppers that form swarms",
+      "size": "35-75mm",
+      "climaticConditions": "Hot dry conditions, 25-45°C, low humidity",
+      "seasonalActivity": "Seasonal swarms, triggered by rains",
+      "hostPlantsCrops": [
+        "Wide range of vegetation"
+      ],
+      "damageSymptoms": [
+        "Complete defoliation",
+        "crop destruction"
+      ],
+      "lifeCycleDuration": "60-90 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Deltamethrin",
+        "Fenitrothion"
+      ]
+    },
+    {
+      "pestName": "Locustoidea",
+      "commonNames": [
+        "Various locust species"
+      ],
+      "statesRegions": [
+        "Similar to above distribution"
+      ],
+      "appearanceDescription": "Large hopping insects, often in groups",
+      "size": "30-70mm",
+      "climaticConditions": "Hot dry climate, 25-40°C",
+      "seasonalActivity": "Outbreak conditions variable",
+      "hostPlantsCrops": [
+        "Wide range of plants"
+      ],
+      "damageSymptoms": [
+        "Mass defoliation"
+      ],
+      "lifeCycleDuration": "50-80 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Deltamethrin",
+        "Fenitrothion"
+      ]
+    },
+    {
+      "pestName": "Longlegged spider mite",
+      "commonNames": [
+        "Red spider mite"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Tiny reddish mites with long legs",
+      "size": "0.4-0.6mm",
+      "climaticConditions": "Hot dry conditions, 28-40°C, low humidity",
+      "seasonalActivity": "Peak in summer months",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "bronzing",
+        "fine webbing"
+      ],
+      "lifeCycleDuration": "10-15 days",
+      "mostCommonlyUsedPesticides": [
+        "Abamectin",
+        "Bifenazate",
+        "Chlorfenapyr"
+      ]
+    },
+    {
+      "pestName": "Lycorma delicatula",
+      "commonNames": [
+        "Spotted lanternfly"
+      ],
+      "statesRegions": [
+        "Northeast states",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Large planthoppers with spotted wings",
+      "size": "20-25mm",
+      "climaticConditions": "Temperate to subtropical, 15-30°C",
+      "seasonalActivity": "One generation per year",
+      "hostPlantsCrops": [
+        "Various trees and crops"
+      ],
+      "damageSymptoms": [
+        "Honeydew secretion",
+        "sooty mold"
+      ],
+      "lifeCycleDuration": "120-150 days",
+      "mostCommonlyUsedPesticides": [
+        "Dinotefuran",
+        "Imidacloprid",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Lytta polita",
+      "commonNames": [
+        "Oil beetle"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Metallic black beetles with soft bodies",
+      "size": "12-20mm",
+      "climaticConditions": "Warm climate, 20-35°C",
+      "seasonalActivity": "Active during warm months",
+      "hostPlantsCrops": [
+        "Various plants"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "can cause skin blisters"
+      ],
+      "lifeCycleDuration": "50-70 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbaryl",
+        "Diazinon",
+        "Malathion"
+      ]
+    },
+    {
+      "pestName": "Mango flat beak leafhopper",
+      "commonNames": [
+        "Mango leafhopper"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "appearanceDescription": "Small wedge-shaped insects on mango leaves",
+      "size": "4-6mm",
+      "climaticConditions": "Tropical to subtropical, 22-35°C",
+      "seasonalActivity": "Peak during mango season",
+      "hostPlantsCrops": [
+        "Mango primarily"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "leaf curl",
+        "honeydew"
+      ],
+      "lifeCycleDuration": "25-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiamethoxam",
+        "Dinotefuran"
+      ]
+    },
+    {
+      "pestName": "Meadow moth",
+      "commonNames": [
+        "Grass moth caterpillar"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Light colored caterpillars with dark spots",
+      "size": "20-30mm",
+      "climaticConditions": "Cool to moderate, 15-28°C",
+      "seasonalActivity": "Multiple generations",
+      "hostPlantsCrops": [
+        "Grasses",
+        "cereals"
+      ],
+      "damageSymptoms": [
+        "Defoliation of grass and cereal crops"
+      ],
+      "lifeCycleDuration": "30-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Chlorpyrifos",
+        "Lambda-cyhalothrin"
+      ]
+    },
+    {
+      "pestName": "Mealybug",
+      "commonNames": [
+        "Various mealybug species"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "White waxy insects in clusters",
+      "size": "2-5mm",
+      "climaticConditions": "Warm climate, 20-32°C, moderate humidity",
+      "seasonalActivity": "Year-round activity in tropical areas",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "honeydew",
+        "sooty mold"
+      ],
+      "lifeCycleDuration": "30-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Clothianidin",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Miridae",
+      "commonNames": [
+        "Plant bugs",
+        "Capsid bugs"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Small oval bugs, various colors, fast-moving",
+      "size": "3-8mm",
+      "climaticConditions": "Wide range, 18-32°C, moderate humidity",
+      "seasonalActivity": "Multiple generations per year",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Stippling",
+        "wilting",
+        "flower/fruit drop"
+      ],
+      "lifeCycleDuration": "25-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Buprofezin",
+        "Clothianidin",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Mites",
+      "commonNames": [
+        "Spider mites",
+        "Red mites"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Tiny arthropods, often reddish, create webbing",
+      "size": "0.2-0.8mm",
+      "climaticConditions": "Hot dry conditions, 25-40°C, low humidity",
+      "seasonalActivity": "Rapid reproduction in dry weather",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Yellow stippling",
+        "bronzing",
+        "webbing"
+      ],
+      "lifeCycleDuration": "7-14 days",
+      "mostCommonlyUsedPesticides": [
+        "Abamectin",
+        "Bifenazate",
+        "Chlorfenapyr"
+      ]
+    },
+    {
+      "pestName": "Mole cricket",
+      "commonNames": [
+        "European mole cricket"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Large cricket-like insects with digging forelegs",
+      "size": "30-50mm",
+      "climaticConditions": "Warm moist soil, 20-30°C, high soil moisture",
+      "seasonalActivity": "Active at night, spring to fall",
+      "hostPlantsCrops": [
+        "Turfgrass",
+        "vegetables",
+        "seedlings"
+      ],
+      "damageSymptoms": [
+        "Tunneling damage",
+        "root feeding",
+        "plant death"
+      ],
+      "lifeCycleDuration": "60-90 days",
+      "mostCommonlyUsedPesticides": [
+        "Bifenthrin",
+        "Carbaryl",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Nipaecoccus vastalor",
+      "commonNames": [
+        "Spherical mealybug"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "White waxy mealybugs in spherical masses",
+      "size": "2-4mm",
+      "climaticConditions": "Tropical climate, 22-32°C, moderate humidity",
+      "seasonalActivity": "Year-round activity",
+      "hostPlantsCrops": [
+        "Various ornamentals and crops"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "honeydew secretion"
+      ],
+      "lifeCycleDuration": "35-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Acetamiprid",
+        "Imidacloprid",
+        "Dinotefuran"
+      ]
+    },
+    {
+      "pestName": "Odontothrips loti",
+      "commonNames": [
+        "Legume thrips"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Small elongated thrips, yellowish-brown",
+      "size": "1-2mm",
+      "climaticConditions": "Warm climate, 22-32°C, moderate humidity",
+      "seasonalActivity": "Active during flowering",
+      "hostPlantsCrops": [
+        "Legumes",
+        "clover"
+      ],
+      "damageSymptoms": [
+        "Silver streaks on leaves",
+        "flower damage"
+      ],
+      "lifeCycleDuration": "15-25 days",
+      "mostCommonlyUsedPesticides": [
+        "Abamectin",
+        "Emamectin benzoate",
+        "Spinosad"
+      ]
+    },
+    {
+      "pestName": "Oides decempunctata",
+      "commonNames": [
+        "Ten-spotted leaf beetle"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Northeast states"
+      ],
+      "appearanceDescription": "Metallic beetles with ten spots",
+      "size": "8-12mm",
+      "climaticConditions": "Humid subtropical, 20-30°C, high humidity",
+      "seasonalActivity": "Active during monsoon",
+      "hostPlantsCrops": [
+        "Various plants"
+      ],
+      "damageSymptoms": [
+        "Leaf holes",
+        "defoliation"
+      ],
+      "lifeCycleDuration": "40-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Abamectin",
+        "Chlorfenapyr",
+        "Pyridaben"
+      ]
+    },
+    {
+      "pestName": "Paddy stem maggot",
+      "commonNames": [
+        "Rice stem maggot"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Small fly larvae boring in rice stems",
+      "size": "Larvae: 6-8mm",
+      "climaticConditions": "Tropical humid, 25-32°C, high humidity >80%",
+      "seasonalActivity": "Coincides with rice transplanting",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Dead hearts",
+        "stem boring",
+        "plant death"
+      ],
+      "lifeCycleDuration": "20-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbofuran",
+        "Chlorpyrifos",
+        "Diazinon"
+      ]
+    },
+    {
+      "pestName": "Panonchus citri McGregor",
+      "commonNames": [
+        "Citrus red mite"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "appearanceDescription": "Tiny reddish mites on citrus leaves",
+      "size": "0.3-0.4mm",
+      "climaticConditions": "Warm dry climate, 25-35°C, low humidity",
+      "seasonalActivity": "Peak in dry seasons",
+      "hostPlantsCrops": [
+        "Citrus fruits"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "bronzing",
+        "fruit scarring"
+      ],
+      "lifeCycleDuration": "12-18 days",
+      "mostCommonlyUsedPesticides": [
+        "Bifenazate",
+        "Spirodiclofen",
+        "Pyridaben"
+      ]
+    },
+    {
+      "pestName": "Papilio xuthus",
+      "commonNames": [
+        "Asian swallowtail butterfly"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Northeast states"
+      ],
+      "appearanceDescription": "Large butterflies, caterpillars green with eyespots",
+      "size": "Larvae: 40-50mm",
+      "climaticConditions": "Subtropical to tropical, 18-30°C",
+      "seasonalActivity": "Multiple broods per year",
+      "hostPlantsCrops": [
+        "Citrus",
+        "rue family plants"
+      ],
+      "damageSymptoms": [
+        "Defoliation by caterpillars"
+      ],
+      "lifeCycleDuration": "30-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Spinosad",
+        "Methomyl"
+      ]
+    },
+    {
+      "pestName": "Parathrene regalis",
+      "commonNames": [
+        "Hornet clearwing moth"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "Clear-winged moths resembling wasps",
+      "size": "Wingspan: 25-35mm",
+      "climaticConditions": "Warm climate, 22-32°C, moderate humidity",
+      "seasonalActivity": "Active during warm months",
+      "hostPlantsCrops": [
+        "Various trees and shrubs"
+      ],
+      "damageSymptoms": [
+        "Stem boring",
+        "branch dieback"
+      ],
+      "lifeCycleDuration": "90-120 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Chlorpyrifos",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Parlatoria zizyphus Lucus",
+      "commonNames": [
+        "Gray scale"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "Gray circular scale insects on plant surfaces",
+      "size": "1-2mm diameter",
+      "climaticConditions": "Warm climate, 22-35°C, moderate humidity",
+      "seasonalActivity": "Year-round activity",
+      "hostPlantsCrops": [
+        "Various fruit trees"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "branch dieback"
+      ],
+      "lifeCycleDuration": "40-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Imidacloprid",
+        "Spirotetramat"
+      ]
+    },
+    {
+      "pestName": "Peach borer",
+      "commonNames": [
+        "Peach tree borer"
+      ],
+      "statesRegions": [
+        "Himachal Pradesh",
+        "Uttarakhand",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Clear-winged moths, larvae bore in tree trunks",
+      "size": "Larvae: 20-30mm",
+      "climaticConditions": "Temperate to subtropical, 15-28°C",
+      "seasonalActivity": "One generation per year",
+      "hostPlantsCrops": [
+        "Stone fruits",
+        "peach trees"
+      ],
+      "damageSymptoms": [
+        "Trunk boring",
+        "gummosis",
+        "tree death"
+      ],
+      "lifeCycleDuration": "300-365 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Imidacloprid",
+        "Lambda-cyhalothrin"
+      ]
+    },
+    {
+      "pestName": "Penthaleus major",
+      "commonNames": [
+        "Winter grain mite"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Uttar Pradesh",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Small reddish-brown mites",
+      "size": "0.8-1.0mm",
+      "climaticConditions": "Cool climate, 10-20°C, moderate humidity",
+      "seasonalActivity": "Active in cooler months",
+      "hostPlantsCrops": [
+        "Wheat",
+        "barley",
+        "grasses"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "plant death"
+      ],
+      "lifeCycleDuration": "45-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Fenpropathrin",
+        "Lambda-cyhalothrin"
+      ]
+    },
+    {
+      "pestName": "Phyllocnistis citrella Stainton",
+      "commonNames": [
+        "Citrus leaf miner"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "appearanceDescription": "Tiny moths, larvae create serpentine mines",
+      "size": "Adult: 4mm wingspan",
+      "climaticConditions": "Warm humid, 25-35°C, high humidity",
+      "seasonalActivity": "Multiple generations per year",
+      "hostPlantsCrops": [
+        "Citrus species"
+      ],
+      "damageSymptoms": [
+        "Serpentine leaf mines",
+        "leaf curling"
+      ],
+      "lifeCycleDuration": "15-25 days",
+      "mostCommonlyUsedPesticides": [
+        "Abamectin",
+        "Emamectin benzoate",
+        "Spinosad"
+      ]
+    },
+    {
+      "pestName": "Phyllocoptes oleiverus ashmead",
+      "commonNames": [
+        "Olive bud mite"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "Microscopic eriophyid mites",
+      "size": "0.15-0.2mm",
+      "climaticConditions": "Mediterranean climate, 20-30°C",
+      "seasonalActivity": "Active during bud break",
+      "hostPlantsCrops": [
+        "Olive trees"
+      ],
+      "damageSymptoms": [
+        "Bud damage",
+        "stunted growth",
+        "deformed leaves"
+      ],
+      "lifeCycleDuration": "12-20 days",
+      "mostCommonlyUsedPesticides": [
+        "Bifenazate",
+        "Abamectin",
+        "Spiromesifen"
+      ]
+    },
+    {
+      "pestName": "Pieris canidia",
+      "commonNames": [
+        "Indian cabbage white"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "White butterflies with black spots, green caterpillars",
+      "size": "Larvae: 25-35mm",
+      "climaticConditions": "Cool to moderate, 15-28°C",
+      "seasonalActivity": "Multiple generations",
+      "hostPlantsCrops": [
+        "Cruciferous crops"
+      ],
+      "damageSymptoms": [
+        "Large holes in leaves",
+        "complete defoliation"
+      ],
+      "lifeCycleDuration": "25-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Cypermethrin",
+        "Neem oil"
+      ]
+    },
+    {
+      "pestName": "Pod borer",
+      "commonNames": [
+        "Legume pod borer"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Caterpillars boring into pods",
+      "size": "15-25mm",
+      "climaticConditions": "Warm climate, 22-32°C, moderate humidity",
+      "seasonalActivity": "During pod formation",
+      "hostPlantsCrops": [
+        "Legumes",
+        "cotton",
+        "various crops"
+      ],
+      "damageSymptoms": [
+        "Pod damage",
+        "seed destruction"
+      ],
+      "lifeCycleDuration": "30-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Emamectin benzoate",
+        "Indoxacarb",
+        "Spinosad"
+      ]
+    },
+    {
+      "pestName": "Polyphagotars onemus latus",
+      "commonNames": [
+        "Broad mite"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "Extremely small mites, barely visible",
+      "size": "0.1-0.2mm",
+      "climaticConditions": "Warm humid, 25-32°C, high humidity >70%",
+      "seasonalActivity": "Rapid reproduction in humid conditions",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Bronzing",
+        "leaf distortion",
+        "stunting"
+      ],
+      "lifeCycleDuration": "5-10 days",
+      "mostCommonlyUsedPesticides": [
+        "Acetamiprid",
+        "Bifenazate",
+        "Spiromesifen"
+      ]
+    },
+    {
+      "pestName": "Potosiabre vitarsis",
+      "commonNames": [
+        "Chafer beetle"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Metallic green beetles",
+      "size": "15-25mm",
+      "climaticConditions": "Warm climate, 22-32°C, moderate humidity",
+      "seasonalActivity": "Active during summer",
+      "hostPlantsCrops": [
+        "Various plants",
+        "flowers"
+      ],
+      "damageSymptoms": [
+        "Flower feeding",
+        "defoliation"
+      ],
+      "lifeCycleDuration": "300-365 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorantraniliprole",
+        "Emamectin benzoate",
+        "Spinosad"
+      ]
+    },
+    {
+      "pestName": "Prodenia litura",
+      "commonNames": [
+        "Cluster caterpillar",
+        "Tobacco cutworm"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Gray-brown caterpillars with distinctive markings",
+      "size": "35-45mm",
+      "climaticConditions": "Warm climate, 20-35°C, moderate humidity",
+      "seasonalActivity": "Multiple generations year-round",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "fruit boring"
+      ],
+      "lifeCycleDuration": "30-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorantraniliprole",
+        "Emamectin benzoate",
+        "Spinosad"
+      ]
+    },
+    {
+      "pestName": "Pseudococcus comstocki Kuwana",
+      "commonNames": [
+        "Comstock mealybug"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "White waxy mealybugs with long filaments",
+      "size": "3-5mm",
+      "climaticConditions": "Temperate to subtropical, 18-30°C",
+      "seasonalActivity": "Multiple generations",
+      "hostPlantsCrops": [
+        "Fruit trees",
+        "ornamentals"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "honeydew secretion"
+      ],
+      "lifeCycleDuration": "35-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Acetamiprid",
+        "Bifenthrin",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Red spider",
+      "commonNames": [
+        "Two-spotted spider mite"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Tiny reddish-brown mites with two spots",
+      "size": "0.4-0.5mm",
+      "climaticConditions": "Hot dry conditions, 25-40°C, low humidity",
+      "seasonalActivity": "Rapid reproduction in hot weather",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Yellow stippling",
+        "webbing",
+        "leaf drop"
+      ],
+      "lifeCycleDuration": "7-12 days",
+      "mostCommonlyUsedPesticides": [
+        "Abamectin",
+        "Bifenazate",
+        "Spiromesifen"
+      ]
+    },
+    {
+      "pestName": "Rhytidodera bowrinii white",
+      "commonNames": [
+        "Longhorn beetle"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Northeast states"
+      ],
+      "appearanceDescription": "Large beetles with long antennae",
+      "size": "25-40mm",
+      "climaticConditions": "Humid subtropical, 22-30°C, high humidity",
+      "seasonalActivity": "Active during warm months",
+      "hostPlantsCrops": [
+        "Various trees"
+      ],
+      "damageSymptoms": [
+        "Stem boring",
+        "branch girdling"
+      ],
+      "lifeCycleDuration": "365+ days",
+      "mostCommonlyUsedPesticides": [
+        "Acephate",
+        "Imidacloprid",
+        "Methomyl"
+      ]
+    },
+    {
+      "pestName": "Rice gall midge",
+      "commonNames": [
+        "Asian rice gall midge"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Tiny flies causing gall formation",
+      "size": "Adult: 1-2mm",
+      "climaticConditions": "Tropical humid, 25-32°C, high humidity >75%",
+      "seasonalActivity": "Synchronized with rice growth",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Silver shoot",
+        "onion leaf galls"
+      ],
+      "lifeCycleDuration": "18-25 days",
+      "mostCommonlyUsedPesticides": [
+        "Cartap hydrochloride",
+        "Chlorpyrifos",
+        "Fipronil"
+      ]
+    },
+    {
+      "pestName": "Rice leaf caterpillar",
+      "commonNames": [
+        "Rice leafroller"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Green caterpillars that roll leaves",
+      "size": "15-20mm",
+      "climaticConditions": "Humid tropical, 25-32°C, high humidity",
+      "seasonalActivity": "Multiple generations during rice season",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Leaf rolling",
+        "skeletonization"
+      ],
+      "lifeCycleDuration": "25-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Cartap hydrochloride",
+        "Chlorantraniliprole",
+        "Emamectin benzoate"
+      ]
+    },
+    {
+      "pestName": "Rice leaf roller",
+      "commonNames": [
+        "Cnaphalocrocis medinalis"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Moths with yellowish-brown wings",
+      "size": "Larvae: 18-22mm",
+      "climaticConditions": "Tropical humid, 24-30°C, high humidity",
+      "seasonalActivity": "Peak during vegetative stage",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Longitudinal leaf rolling",
+        "white streaks"
+      ],
+      "lifeCycleDuration": "30-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Cypermethrin",
+        "Indoxacarb"
+      ]
+    },
+    {
+      "pestName": "Rice leafhopper",
+      "commonNames": [
+        "Green rice leafhopper"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Small green wedge-shaped insects",
+      "size": "3-5mm",
+      "climaticConditions": "Tropical humid, 25-32°C, high humidity",
+      "seasonalActivity": "Active throughout rice season",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "virus transmission"
+      ],
+      "lifeCycleDuration": "25-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiamethoxam",
+        "Chlorpyrifos"
+      ]
+    },
+    {
+      "pestName": "Rice shell pest",
+      "commonNames": [
+        "Rice bug"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Brown bugs feeding on rice grains",
+      "size": "12-16mm",
+      "climaticConditions": "Tropical climate, 24-32°C, moderate humidity",
+      "seasonalActivity": "During grain filling stage",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Unfilled grains",
+        "pecky rice"
+      ],
+      "lifeCycleDuration": "35-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Cartap",
+        "Methomyl",
+        "Carbaryl"
+      ]
+    },
+    {
+      "pestName": "Rice Stemfly",
+      "commonNames": [
+        "Rice stem fly"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Small flies, larvae bore in rice stems",
+      "size": "Adult: 3-4mm",
+      "climaticConditions": "Tropical humid, 25-30°C, high humidity",
+      "seasonalActivity": "During tillering stage",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Dead hearts",
+        "white ears"
+      ],
+      "lifeCycleDuration": "25-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Neonicotinoids",
+        "Fipronil",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Rice water weevil",
+      "commonNames": [
+        "Aquatic weevil"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Dark brown weevils in flooded rice fields",
+      "size": "2-4mm",
+      "climaticConditions": "Flooded conditions, 25-30°C",
+      "seasonalActivity": "During rice establishment",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Root pruning",
+        "stunted growth"
+      ],
+      "lifeCycleDuration": "60-90 days",
+      "mostCommonlyUsedPesticides": [
+        "Carbofuran",
+        "Chlorpyrifos",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Salurnis marginella Guerr",
+      "commonNames": [
+        "Margined pest"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Andhra Pradesh"
+      ],
+      "appearanceDescription": "Small insects with margined appearance",
+      "size": "4-6mm",
+      "climaticConditions": "Tropical climate, 22-30°C, moderate humidity",
+      "seasonalActivity": "Active during crop season",
+      "hostPlantsCrops": [
+        "Various crops"
+      ],
+      "damageSymptoms": [
+        "Leaf damage",
+        "reduced vigor"
+      ],
+      "lifeCycleDuration": "30-35 days",
+      "mostCommonlyUsedPesticides": [
+        "Methomyl",
+        "Chlorpyrifos",
+        "Carbaryl"
+      ]
+    },
+    {
+      "pestName": "Sawfly",
+      "commonNames": [
+        "Various sawfly species"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Wasp-like adults, caterpillar-like larvae",
+      "size": "Larvae: 15-25mm",
+      "climaticConditions": "Temperate to tropical, 15-30°C",
+      "seasonalActivity": "Spring to fall activity",
+      "hostPlantsCrops": [
+        "Trees",
+        "shrubs",
+        "crops"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "skeletonized leaves"
+      ],
+      "lifeCycleDuration": "40-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Malathion",
+        "Carbaryl",
+        "Cypermethrin"
+      ]
+    },
+    {
+      "pestName": "Scirtothrips dorsalis Hood",
+      "commonNames": [
+        "Chili thrips",
+        "Yellow tea thrips"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "Tiny yellow thrips",
+      "size": "1mm",
+      "climaticConditions": "Warm humid, 25-35°C, high humidity",
+      "seasonalActivity": "Year-round in tropical areas",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Silver streaks",
+        "leaf curling",
+        "stunting"
+      ],
+      "lifeCycleDuration": "15-20 days",
+      "mostCommonlyUsedPesticides": [
+        "Spinosad",
+        "Abamectin",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Sericaorient alismots chulsky",
+      "commonNames": [
+        "Oriental beetle"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Metallic brown beetles",
+      "size": "8-12mm",
+      "climaticConditions": "Warm climate, 20-32°C, moderate humidity",
+      "seasonalActivity": "Active during summer months",
+      "hostPlantsCrops": [
+        "Various plants",
+        "turf"
+      ],
+      "damageSymptoms": [
+        "Root feeding as grubs",
+        "adult foliar feeding"
+      ],
+      "lifeCycleDuration": "300-365 days",
+      "mostCommonlyUsedPesticides": [
+        "Thiamethoxam",
+        "Clothianidin",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Small brown plant hopper",
+      "commonNames": [
+        "Rice brown planthopper"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Small brown hopping insects",
+      "size": "2-3mm",
+      "climaticConditions": "Tropical humid, 25-32°C, high humidity",
+      "seasonalActivity": "Peak during rice season",
+      "hostPlantsCrops": [
+        "Rice mainly"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "virus transmission"
+      ],
+      "lifeCycleDuration": "20-28 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Chlorpyrifos",
+        "Acephate"
+      ]
+    },
+    {
+      "pestName": "Spilosoma Obliqua",
+      "commonNames": [
+        "Bihar hairy caterpillar"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Hairy caterpillars with white and black markings",
+      "size": "30-40mm",
+      "climaticConditions": "Warm humid, 22-35°C, moderate to high humidity",
+      "seasonalActivity": "Multiple generations, peak in monsoon",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Complete defoliation",
+        "economic loss"
+      ],
+      "lifeCycleDuration": "35-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Bacillus thuringiensis",
+        "Cypermethrin",
+        "Chlorantraniliprole"
+      ]
+    },
+    {
+      "pestName": "Stem borer",
+      "commonNames": [
+        "Various stem borer species"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Caterpillars boring into plant stems",
+      "size": "15-30mm",
+      "climaticConditions": "Warm humid conditions, 24-32°C",
+      "seasonalActivity": "During stem formation",
+      "hostPlantsCrops": [
+        "Cereals",
+        "sugarcane",
+        "various crops"
+      ],
+      "damageSymptoms": [
+        "Dead hearts",
+        "white ears",
+        "lodging"
+      ],
+      "lifeCycleDuration": "35-50 days",
+      "mostCommonlyUsedPesticides": [
+        "Neonicotinoids",
+        "Pyrethroids",
+        "Chlorantraniliprole"
+      ]
+    },
+    {
+      "pestName": "Sternochetus frigidus",
+      "commonNames": [
+        "Weevil species"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Northeast states"
+      ],
+      "appearanceDescription": "Dark colored weevils",
+      "size": "6-10mm",
+      "climaticConditions": "Cool to moderate, 15-28°C",
+      "seasonalActivity": "Active during cooler months",
+      "hostPlantsCrops": [
+        "Rice", "Paddy",
+        "Various plants"
+      ],
+      "damageSymptoms": [
+        "Leaf notching",
+        "root feeding"
+      ],
+      "lifeCycleDuration": "45-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Carbaryl",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Tarnished plant bug",
+      "commonNames": [
+        "Lygus bug"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Brown bugs with distinctive markings",
+      "size": "5-6mm",
+      "climaticConditions": "Wide temperature range, 15-32°C",
+      "seasonalActivity": "Multiple generations",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Stippling",
+        "wilting",
+        "flower/fruit drop"
+      ],
+      "lifeCycleDuration": "30-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Lambda-cyhalothrin",
+        "Methomyl"
+      ]
+    },
+    {
+      "pestName": "Termite",
+      "commonNames": [
+        "Various termite species"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Social insects, pale colored, winged reproductives",
+      "size": "Workers: 4-6mm",
+      "climaticConditions": "Warm humid, 20-35°C, high soil moisture",
+      "seasonalActivity": "Year-round activity, swarming seasonal",
+      "hostPlantsCrops": [
+        "Wide range including structures"
+      ],
+      "damageSymptoms": [
+        "Root damage",
+        "plant death",
+        "structural damage"
+      ],
+      "lifeCycleDuration": "2-4 years",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Imidacloprid",
+        "Fipronil"
+      ]
+    },
+    {
+      "pestName": "Termite odontotermes (Rambur)",
+      "commonNames": [
+        "Fungus-growing termite"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Large termites building mounds",
+      "size": "Workers: 5-8mm",
+      "climaticConditions": "Tropical climate, 22-35°C, high humidity",
+      "seasonalActivity": "Year-round activity",
+      "hostPlantsCrops": [
+        "Crops",
+        "trees",
+        "organic matter"
+      ],
+      "damageSymptoms": [
+        "Root cutting",
+        "plant death",
+        "mound formation"
+      ],
+      "lifeCycleDuration": "3-5 years",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Imidacloprid",
+        "Fipronil"
+      ]
+    },
+    {
+      "pestName": "Tetradacus c Bactrocera minax",
+      "commonNames": [
+        "Chinese citrus fly"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Northeast states"
+      ],
+      "appearanceDescription": "Fruit flies with distinctive wing patterns",
+      "size": "6-8mm",
+      "climaticConditions": "Subtropical climate, 18-28°C, moderate humidity",
+      "seasonalActivity": "Peak during citrus season",
+      "hostPlantsCrops": [
+        "Citrus fruits"
+      ],
+      "damageSymptoms": [
+        "Fruit infestation",
+        "premature drop"
+      ],
+      "lifeCycleDuration": "20-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Malathion",
+        "Spinosad",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Therioaphis maculata Buckton",
+      "commonNames": [
+        "Spotted alfalfa aphid"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Rajasthan",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Yellow-green aphids with dark spots",
+      "size": "1-2mm",
+      "climaticConditions": "Warm dry conditions, 20-30°C, low humidity",
+      "seasonalActivity": "Peak during dry periods",
+      "hostPlantsCrops": [
+        "Alfalfa",
+        "legumes"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "plant death"
+      ],
+      "lifeCycleDuration": "10-15 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Acetamiprid",
+        "Thiamethoxam"
+      ]
+    },
+    {
+      "pestName": "Thrips",
+      "commonNames": [
+        "Various thrips species"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Tiny elongated insects with fringed wings",
+      "size": "1-3mm",
+      "climaticConditions": "Warm climate, 20-35°C, variable humidity",
+      "seasonalActivity": "Multiple generations year-round",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Silver streaks",
+        "black spots",
+        "distorted growth"
+      ],
+      "lifeCycleDuration": "15-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Spinosad",
+        "Abamectin",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Toxoptera aurantii",
+      "commonNames": [
+        "Black citrus aphid"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "appearanceDescription": "Black aphids in dense colonies",
+      "size": "1-2mm",
+      "climaticConditions": "Subtropical to tropical, 18-32°C",
+      "seasonalActivity": "Peak in cooler months",
+      "hostPlantsCrops": [
+        "Citrus",
+        "related plants"
+      ],
+      "damageSymptoms": [
+        "Leaf curling",
+        "sooty mold",
+        "stunting"
+      ],
+      "lifeCycleDuration": "12-18 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiamethoxam",
+        "Chlorpyrifos"
+      ]
+    },
+    {
+      "pestName": "Toxoptera citricidus",
+      "commonNames": [
+        "Brown citrus aphid"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "appearanceDescription": "Brown aphids transmitting citrus tristeza",
+      "size": "1-2mm",
+      "climaticConditions": "Subtropical climate, 18-30°C",
+      "seasonalActivity": "Active in mild weather",
+      "hostPlantsCrops": [
+        "Citrus species"
+      ],
+      "damageSymptoms": [
+        "Leaf curling",
+        "virus transmission",
+        "stunting"
+      ],
+      "lifeCycleDuration": "10-15 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiamethoxam",
+        "Chlorpyrifos"
+      ]
+    },
+    {
+      "pestName": "Trialeurodes vaporariorum",
+      "commonNames": [
+        "Greenhouse whitefly"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Small white flying insects",
+      "size": "1-2mm",
+      "climaticConditions": "Warm humid, 18-32°C, high humidity",
+      "seasonalActivity": "Year-round in protected cultivation",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "honeydew",
+        "sooty mold"
+      ],
+      "lifeCycleDuration": "20-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Neonicotinoids",
+        "Pyrethroids",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "Unaspis yanonensis",
+      "commonNames": [
+        "Arrowhead scale"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "appearanceDescription": "Oyster shell-shaped scale insects",
+      "size": "2-3mm",
+      "climaticConditions": "Subtropical to tropical, 20-32°C",
+      "seasonalActivity": "Year-round activity",
+      "hostPlantsCrops": [
+        "Citrus",
+        "ornamentals"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "branch dieback"
+      ],
+      "lifeCycleDuration": "45-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Chlorpyrifos",
+        "Abamectin"
+      ]
+    },
+    {
+      "pestName": "Viteus vitifoliae",
+      "commonNames": [
+        "Grape phylloxera"
+      ],
+      "statesRegions": [
+        "Maharashtra",
+        "Karnataka",
+        "Kerala (occasional)",
+        "Tamil Nadu (occasional)"
+      ],
+      "appearanceDescription": "Tiny aphid-like insects forming galls",
+      "size": "1mm",
+      "climaticConditions": "Temperate to subtropical, 15-30°C",
+      "seasonalActivity": "Active during grape season",
+      "hostPlantsCrops": [
+        "Grapevines"
+      ],
+      "damageSymptoms": [
+        "Root galls",
+        "leaf galls",
+        "vine decline"
+      ],
+      "lifeCycleDuration": "50-70 days",
+      "mostCommonlyUsedPesticides": [
+        "Pyrethroids",
+        "Organophosphates",
+        "Neonicotinoids"
+      ]
+    },
+    {
+      "pestName": "Wheat blossom midge",
+      "commonNames": [
+        "Wheat midge"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Uttar Pradesh",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Tiny orange flies",
+      "size": "Adult: 2-3mm",
+      "climaticConditions": "Cool to moderate, 15-25°C",
+      "seasonalActivity": "During wheat flowering",
+      "hostPlantsCrops": [
+        "Wheat"
+      ],
+      "damageSymptoms": [
+        "Shriveled grains",
+        "reduced yield"
+      ],
+      "lifeCycleDuration": "25-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Imidacloprid",
+        "Lambda-cyhalothrin"
+      ]
+    },
+    {
+      "pestName": "Wheat phloeothrips",
+      "commonNames": [
+        "Wheat thrips"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Uttar Pradesh",
+        "Kerala (occasional)",
+        "Tamil Nadu (occasional)"
+      ],
+      "appearanceDescription": "Small dark thrips",
+      "size": "1-2mm",
+      "climaticConditions": "Warm dry conditions, 22-32°C, low humidity",
+      "seasonalActivity": "During grain filling",
+      "hostPlantsCrops": [
+        "Wheat",
+        "barley"
+      ],
+      "damageSymptoms": [
+        "Silver streaks",
+        "shriveled grains"
+      ],
+      "lifeCycleDuration": "20-25 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiamethoxam",
+        "Chlorpyrifos"
+      ]
+    },
+    {
+      "pestName": "Wheat sawfly",
+      "commonNames": [
+        "Wheat stem sawfly"
+      ],
+      "statesRegions": [
+        "Punjab",
+        "Haryana",
+        "Uttar Pradesh",
+        "Kerala (rare)",
+        "Tamil Nadu (rare)"
+      ],
+      "appearanceDescription": "Wasp-like adults, larvae bore in stems",
+      "size": "Larvae: 12-18mm",
+      "climaticConditions": "Temperate, 15-28°C, moderate humidity",
+      "seasonalActivity": "One generation during wheat season",
+      "hostPlantsCrops": [
+        "Wheat",
+        "other cereals"
+      ],
+      "damageSymptoms": [
+        "Stem cutting",
+        "lodging",
+        "white heads"
+      ],
+      "lifeCycleDuration": "45-60 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Acetamiprid",
+        "Imidacloprid"
+      ]
+    },
+    {
+      "pestName": "White backed plant hopper",
+      "commonNames": [
+        "Rice white-backed planthopper"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Small brown insects with white markings",
+      "size": "4-5mm",
+      "climaticConditions": "Tropical humid, 25-32°C, high humidity",
+      "seasonalActivity": "Peak during rice vegetative stage",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stunting",
+        "virus transmission"
+      ],
+      "lifeCycleDuration": "25-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiamethoxam",
+        "Chlorpyrifos"
+      ]
+    },
+    {
+      "pestName": "White margined moth",
+      "commonNames": [
+        "White-edged moth"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Moths with white wing margins, hairy caterpillars",
+      "size": "Larvae: 25-35mm",
+      "climaticConditions": "Tropical to subtropical, 20-32°C",
+      "seasonalActivity": "Multiple generations",
+      "hostPlantsCrops": [
+        "Various crops"
+      ],
+      "damageSymptoms": [
+        "Defoliation",
+        "skeletonized leaves"
+      ],
+      "lifeCycleDuration": "35-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorantraniliprole",
+        "Spinosad",
+        "Bacillus thuringiensis"
+      ]
+    },
+    {
+      "pestName": "Whitefly",
+      "commonNames": [
+        "Various whitefly species"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Tiny white flying insects",
+      "size": "1-2mm",
+      "climaticConditions": "Warm climate, 20-35°C, moderate to high humidity",
+      "seasonalActivity": "Multiple generations year-round",
+      "hostPlantsCrops": [
+        "Wide range of crops"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "honeydew",
+        "virus transmission",
+        "sooty mold"
+      ],
+      "lifeCycleDuration": "18-30 days",
+      "mostCommonlyUsedPesticides": [
+        "Imidacloprid",
+        "Thiamethoxam",
+        "Pyrethroids"
+      ]
+    },
+    {
+      "pestName": "Wireworm",
+      "commonNames": [
+        "Click beetle larvae"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Hard-bodied yellowish larvae",
+      "size": "12-25mm",
+      "climaticConditions": "Moist soil conditions, 18-25°C",
+      "seasonalActivity": "Long-lived soil dwelling stage",
+      "hostPlantsCrops": [
+        "Root crops",
+        "cereals",
+        "vegetables"
+      ],
+      "damageSymptoms": [
+        "Root tunneling",
+        "plant death",
+        "poor germination"
+      ],
+      "lifeCycleDuration": "2-5 years",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Imidacloprid",
+        "Fipronil"
+      ]
+    },
+    {
+      "pestName": "Xylotrechus",
+      "commonNames": [
+        "Longhorn beetle"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Elongated beetles with long antennae",
+      "size": "15-30mm",
+      "climaticConditions": "Temperate to tropical, 18-32°C",
+      "seasonalActivity": "Active during warm months",
+      "hostPlantsCrops": [
+        "Various trees"
+      ],
+      "damageSymptoms": [
+        "Stem boring",
+        "branch girdling",
+        "tree death"
+      ],
+      "lifeCycleDuration": "1-3 years",
+      "mostCommonlyUsedPesticides": [
+        "Methoxyfenozide",
+        "Chlorpyrifos",
+        "Fipronil"
+      ]
+    },
+    {
+      "pestName": "Yellow cutworm",
+      "commonNames": [
+        "Yellow armyworm"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Yellowish caterpillars that cut plants",
+      "size": "30-40mm",
+      "climaticConditions": "Warm climate, 20-30°C, moderate humidity",
+      "seasonalActivity": "Multiple generations, peak after rains",
+      "hostPlantsCrops": [
+        "Various crops"
+      ],
+      "damageSymptoms": [
+        "Cut plants at soil level",
+        "defoliation"
+      ],
+      "lifeCycleDuration": "35-45 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Methomyl",
+        "Carbaryl"
+      ]
+    },
+    {
+      "pestName": "Yellow Mite",
+      "commonNames": [
+        "Yellow spider mite"
+      ],
+      "statesRegions": [
+        "All states including Kerala",
+        "Tamil Nadu"
+      ],
+      "appearanceDescription": "Small yellowish mites",
+      "size": "0.3-0.5mm",
+      "climaticConditions": "Hot dry conditions, 28-40°C, low humidity",
+      "seasonalActivity": "Peak during hot dry periods",
+      "hostPlantsCrops": [
+        "Citrus",
+        "vegetables",
+        "ornamentals"
+      ],
+      "damageSymptoms": [
+        "Yellowing",
+        "stippling",
+        "leaf drop"
+      ],
+      "lifeCycleDuration": "8-15 days",
+      "mostCommonlyUsedPesticides": [
+        "Spiromesifen",
+        "Abamectin",
+        "Fenazaquin"
+      ]
+    },
+    {
+      "pestName": "Yellow rice borer",
+      "commonNames": [
+        "Asiatic rice borer"
+      ],
+      "statesRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "West Bengal",
+        "Odisha"
+      ],
+      "appearanceDescription": "Yellow-brown moths with distinctive markings",
+      "size": "Larvae: 20-25mm",
+      "climaticConditions": "Tropical humid, 25-32°C, high humidity >80%",
+      "seasonalActivity": "Multiple generations during rice season",
+      "hostPlantsCrops": [
+        "Rice"
+      ],
+      "damageSymptoms": [
+        "Dead hearts",
+        "white ears",
+        "stem tunneling"
+      ],
+      "lifeCycleDuration": "35-40 days",
+      "mostCommonlyUsedPesticides": [
+        "Chlorpyrifos",
+        "Neonicotinoids",
+        "Fipronil"
+      ]
+    }
+  ]
+}
