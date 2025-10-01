@@ -406,10 +406,22 @@ def main():
         if image is None and 'selected_example_tab1' in st.session_state:
             selected_sample = st.session_state.selected_example_tab1
             try:
-                response = requests.get(selected_sample[1])
-                image = Image.open(io.BytesIO(response.content))
-                st.image(image, caption=f"Selected: {selected_sample[0]}", use_container_width=False, width=400)
-                st.info(f"📏 Image Size: {image.size[0]}x{image.size[1]} pixels")
+                response = requests.get(selected_sample[1], timeout=10)
+                response.raise_for_status()  # Raise an error for bad status codes
+                
+                # Verify we got image content
+                content_type = response.headers.get('content-type', '')
+                if 'image' not in content_type:
+                    st.error(f"URL did not return an image (got {content_type})")
+                else:
+                    image = Image.open(io.BytesIO(response.content))
+                    # Convert to RGB if necessary (some images might be in RGBA or other modes)
+                    if image.mode != 'RGB':
+                        image = image.convert('RGB')
+                    st.image(image, caption=f"Selected: {selected_sample[0]}", use_column_width=False, width=400)
+                    st.info(f"📏 Image Size: {image.size[0]}x{image.size[1]} pixels")
+            except requests.exceptions.RequestException as e:
+                st.error(f"Error fetching image from URL: {e}")
             except Exception as e:
                 st.error(f"Error loading sample image: {e}")
 
