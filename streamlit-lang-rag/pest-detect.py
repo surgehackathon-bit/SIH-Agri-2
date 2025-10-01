@@ -374,10 +374,10 @@ def main():
         )
         st.markdown("### Or choose a sample image:")
         sample_images = {
-            "Busseola fusca on Maize": {"url":"https://blog.plantwise.org/wp-content/uploads/sites/7/2017/06/maize-stalk-borer-768x645.jpg",'prompt':"Growing maize crop in Palakkad, Kerala"},
-            "Yellow Sugarcane Aphid": {"url":"https://www.mdpi.com/insects/insects-10-00107/article_deploy/html/images/insects-10-00107-g002-550.jpg",'prompt':"Having sugarcane farm in Idukki, Kerala"},
-            "Leaf Spots on Banana Leaf": {"url":"https://kisanvedika.bighaat.com/wp-content/uploads/2023/03/Banana_Sigatoka_Leaf-41.jpg",'prompt':"Cultivating Banana trees in Thrissur and Thiruvananthapuram, Kerala"},
-            "White spots on Rubber Plant": {"url":"https://plantura.garden/uk/wp-content/uploads/sites/2/2022/05/rubber-plant-pests.jpg",'prompt':"Growing Rubber plants for production in Kottayam, Kerala"}
+            "Busseola fusca on Maize": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2//main/samples/Busseola fusca on Maize.jpg",'prompt':"Growing maize crop in Palakkad, Kerala"},
+            "Yellow Sugarcane Aphid": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2//main/samples/Yellow Sugarcane Aphid.jpg",'prompt':"Having sugarcane farm in Idukki, Kerala"},
+            "Leaf Spots on Banana Leaf": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2//main/samples/Leaf Spots on Banana Leaf.jpg",'prompt':"Cultivating Banana trees in Thrissur and Thiruvananthapuram, Kerala"},
+            "White spots on Rubber Plant": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2//main/samples/White spots on Rubber Plant.jpg",'prompt':"Growing Rubber plants for production in Kottayam, Kerala"}
         }
 
         cols = st.columns(len(sample_images))
