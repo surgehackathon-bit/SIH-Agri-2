@@ -382,12 +382,16 @@ def main():
 
         cols = st.columns(len(sample_images))
         selected_sample = None
-
+        
         for idx, (name, data) in enumerate(sample_images.items()):
             with cols[idx]:
-                st.image(data["url"], caption=name, use_container_width=True)
+                st.image(data["path"], caption=name, use_container_width=True)
                 if st.button(f"Use this", key=f"example_tab1_{idx}"):
-                    selected_sample = (name, data["url"], data["prompt"])
+                    selected_sample = (name, data["path"], data["prompt"])
+                    # Immediately update session state
+                    st.session_state.selected_example_tab1 = selected_sample
+                    st.session_state.selected_prompt = data["prompt"]
+                    st.rerun()  # Force rerun to update the text area
 
         image = None
         if uploaded_file is not None:
@@ -398,9 +402,6 @@ def main():
 
         elif selected_sample is not None:
             st.success(f"✅ Selected: {selected_sample[0]}")
-            # Store in session state
-            st.session_state.selected_example_tab1 = selected_sample
-            st.session_state.selected_prompt = selected_sample[2]
 
         # Check if we have a selected sample from previous interaction
         if image is None and 'selected_example_tab1' in st.session_state:
@@ -428,11 +429,12 @@ def main():
     with col2:
         st.header("📝 Context Information")
         
-        default_text = st.session_state.get('selected_prompt', '')
-
+        if 'selected_prompt' not in st.session_state:
+            st.session_state.selected_prompt = ''
+        
         additional_text = st.text_area(
             "Location, Crop & Symptom Details:",
-            value=default_text,
+            value=st.session_state.selected_prompt,
             height=150,
             placeholder="""Provide specific details to match with pest database:
         ...
