@@ -385,9 +385,9 @@ def main():
         
         for idx, (name, data) in enumerate(sample_images.items()):
             with cols[idx]:
-                st.image(data["path"], caption=name, use_container_width=True)
+                st.image(data["url"], caption=name, use_container_width=True)
                 if st.button(f"Use this", key=f"example_tab1_{idx}"):
-                    selected_sample = (name, data["path"], data["prompt"])
+                    selected_sample = (name, data["url"], data["prompt"])
                     # Immediately update session state
                     st.session_state.selected_example_tab1 = selected_sample
                     st.session_state.selected_prompt = data["prompt"]
