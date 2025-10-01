@@ -374,10 +374,10 @@ def main():
         )
         st.markdown("### Or choose a sample image:")
         sample_images = {
-            "Busseola fusca on Maize": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2//main/samples/Busseola fusca on Maize.jpg",'prompt':"Growing maize crop in Palakkad, Kerala"},
-            "Yellow Sugarcane Aphid": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2//main/samples/Yellow Sugarcane Aphid.jpg",'prompt':"Having sugarcane farm in Idukki, Kerala"},
-            "Leaf Spots on Banana Leaf": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2//main/samples/Leaf Spots on Banana Leaf.jpg",'prompt':"Cultivating Banana trees in Thrissur and Thiruvananthapuram, Kerala"},
-            "White spots on Rubber Plant": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2//main/samples/White spots on Rubber Plant.jpg",'prompt':"Growing Rubber plants for production in Kottayam, Kerala"}
+            "Busseola fusca on Maize": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2/refs/heads/master/samples/Busseola%20fusca%20on%20Maize.jpg",'prompt':"Growing maize crop in Palakkad, Kerala"},
+            "Yellow Sugarcane Aphid": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2/refs/heads/master/samples/Yellow%20Sugarcane%20Aphid.jpg",'prompt':"Having sugarcane farm in Idukki, Kerala"},
+            "Leaf Spots on Banana Leaf": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2/refs/heads/master/samples/Leaf%20Spots%20on%20Banana%20Leaf.jpg",'prompt':"Cultivating Banana trees in Thrissur and Thiruvananthapuram, Kerala"},
+            "White spots on Rubber Plant": {"url":"https://raw.githubusercontent.com/surgehackathon-bit/SIH-Agri-2/refs/heads/master/samples/White%20spots%20on%20Rubber%20Plant.jpg",'prompt':"Growing Rubber plants for production in Kottayam, Kerala"}
         }
 
         cols = st.columns(len(sample_images))
