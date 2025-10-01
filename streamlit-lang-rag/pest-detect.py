@@ -418,7 +418,7 @@ def main():
                     # Convert to RGB if necessary (some images might be in RGBA or other modes)
                     if image.mode != 'RGB':
                         image = image.convert('RGB')
-                    st.image(image, caption=f"Selected: {selected_sample[0]}", use_column_width=False, width=400)
+                    st.image(image, caption=f"Selected: {selected_sample[0]}", use_container_width=False, width=400)
                     st.info(f"📏 Image Size: {image.size[0]}x{image.size[1]} pixels")
             except requests.exceptions.RequestException as e:
                 st.error(f"Error fetching image from URL: {e}")
