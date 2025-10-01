@@ -390,7 +390,7 @@ def main():
                     selected_sample = (name, data["url"], data["prompt"])
                     # Immediately update session state
                     st.session_state.selected_example_tab1 = selected_sample
-                    st.session_state.selected_prompt = data["prompt"]
+                    st.session_state.context_input = data["prompt"]  # Update the text_area's key directly
                     st.rerun()  # Force rerun to update the text area
 
         image = None
@@ -429,12 +429,8 @@ def main():
     with col2:
         st.header("📝 Context Information")
         
-        if 'selected_prompt' not in st.session_state:
-            st.session_state.selected_prompt = ''
-        
         additional_text = st.text_area(
             "Location, Crop & Symptom Details:",
-            value=st.session_state.selected_prompt,
             height=150,
             placeholder="""Provide specific details to match with pest database:
         ...
