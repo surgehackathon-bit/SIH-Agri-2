@@ -6,15 +6,13 @@ requests>=2.31.0
 python-dotenv>=1.0.0
 
 # LangChain and RAG Components
-langchain>=0.1.17
-langchain-core>=0.1.52
-langchain-community>=0.0.34
-langchain-text-splitters>=0.0.2
-langchain-huggingface>=0.0.3
-langchain-groq>=0.1.0
+langchain==0.2.14
+langchain-core==0.2.37
+langchain-community==0.2.12
+langchain-text-splitters==0.2.2
+langchain-huggingface==0.0.3
+langchain-groq==0.1.0
 sentence-transformers
-langchain-openai>=0.0.7
-langchain-text-splitters>=0.0.2
 
 # Vector Database and Embeddings
 faiss-cpu>=1.7.4
@@ -38,4 +36,3 @@ tiktoken>=0.5.0
 
 # Async Processing
 aiohttp>=3.9.0
-
