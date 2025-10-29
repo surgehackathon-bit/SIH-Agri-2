@@ -12,6 +12,8 @@ langchain-core>=0.1.52
 langchain-groq>=0.1.0
 langchain-huggingface
 sentence-transformers
+langchain-openai>=0.0.7
+langchain-text-splitters>=0.0.2
 
 # Vector Database and Embeddings
 faiss-cpu>=1.7.4
