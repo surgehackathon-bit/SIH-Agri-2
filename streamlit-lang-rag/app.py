@@ -2380,7 +2380,7 @@ if "vectors" not in st.session_state:
 
             # 5. Create vector store
             @st.cache_resource(show_spinner="🔨 Building vector store...")
-            def create_vector_store(_embeddings, documents):
+            def create_vector_store(_embeddings, _documents):
                 """Cached vector store creation"""
                 text_splitter = RecursiveCharacterTextSplitter(
                     chunk_size=800,
