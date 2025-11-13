@@ -2380,16 +2380,17 @@ if "vectors" not in st.session_state:
 
             # 5. Create vector store
             @st.cache_resource(show_spinner="🔨 Building vector store...")
-            def create_vector_store(_embeddings, _documents):
+            def create_vector_store(_embeddings, _documents):  # Add underscore to _documents
                 """Cached vector store creation"""
                 text_splitter = RecursiveCharacterTextSplitter(
                     chunk_size=800,
                     chunk_overlap=100,
                     separators=["\n\n", "\n", ".", " "]
                 )
-                final_documents = text_splitter.split_documents(documents)
+                final_documents = text_splitter.split_documents(_documents)
                 
                 return FAISS.from_documents(final_documents, _embeddings), len(final_documents)
+            
             st.session_state.vectors,chunk_count = create_vector_store(st.session_state.embeddings,all_documents)
 
             st.sidebar.success(f"✅ Knowledge Base Ready! ({len(final_documents)} chunks)")
