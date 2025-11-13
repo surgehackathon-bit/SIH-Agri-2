@@ -2322,7 +2322,8 @@ if "vectors" not in st.session_state:
     with st.spinner("🔨 Building comprehensive agricultural knowledge base..."):
         try:
             # Initialize embeddings
-            MODEL_PATH = Path(__file__).parent.parent / "models" / "bge-small-en-v1.5"
+            MODEL_PATH = Path(__file__).parent.parent/ "../models" / "bge-small-en-v1.5"
+            print(MODEL_PATH)
             @st.cache_resource(show_spinner="🔨 Loading embeddings...")
             def get_embeddings():
                 return HuggingFaceEmbeddings(
